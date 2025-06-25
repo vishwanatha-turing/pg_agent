@@ -9,6 +9,8 @@ from pg_agent.prompts.test_case import (
     TEST_CASE_PROMPT,
     SAMPLE_TEST_CASE_PROMPT,
 )
+import json
+import ast
 
 __all__ = [
     "generate_test_scenarios",
@@ -16,80 +18,6 @@ __all__ = [
     "generate_sample_test_cases",
     "case_generator_node",
 ]
-
-# ---------------------------------------------------------------------------
-# Prompt templates (TODO: move to pg_agent/prompts/)
-# ---------------------------------------------------------------------------
-
-# SCENARIO_PROMPT = """You are an expert competitive programming test case designer.
-# Given this problem statement, identify all possible edge cases and scenarios that should be tested.
-# Consider:
-# - Boundary conditions
-# - Special cases
-# - Performance edge cases
-# - Invalid inputs
-# - Maximum/minimum values
-# - Empty/null cases
-#
-# Problem Statement:
-# {problem_statement}
-#
-# Output ONLY a list of scenarios, one per line, without any additional text."""
-#
-# TEST_CASE_PROMPT = """You are an expert competitive programming test case generator.
-# Given this problem statement and list of scenarios, generate Python code that creates test cases.
-# Each test case should be a tuple of (input, expected_output).
-#
-# Problem Statement:
-# {problem_statement}
-#
-# Scenarios to cover:
-# {scenarios}
-#
-# Output ONLY the Python code that generates the test cases, ensuring:
-# - Each test case tests one or more scenarios
-# - Test cases are comprehensive
-# - Test cases follow the input/output format specified in the problem
-# - Include comments explaining which scenario each test case covers"""
-#
-# SAMPLE_TEST_CASE_PROMPT = """You are an expert competitive programming instructor.
-# Given this problem statement, generate sample test cases for initial validation and understanding.
-#
-# Problem Statement:
-# {problem_statement}
-#
-# Generate your response in exactly this format:
-#
-# ## Section 1: Sample Test Cases with Explanations
-#
-# ### Test Case 1:
-# **Input:** [input here]
-# **Step-by-step solution:**
-# 1. [step 1]
-# 2. [step 2]
-# 3. [step 3]
-# **Output:** [output here]
-#
-# ### Test Case 2:
-# [repeat format for 4-5 test cases total]
-#
-# ## Section 2: Test Cases for Validation
-#
-# ```
-# Input: [input]
-# Output: [output]
-#
-# Input: [input]
-# Output: [output]
-#
-# [repeat for all test cases]
-# ```
-#
-# Make sure the test cases:
-# - Cover basic functionality
-# - Include at least one edge case
-# - Are easy to trace through manually
-# - Have clear, step-by-step explanations"""
 
 # ---------------------------------------------------------------------------
 # Generation helpers
@@ -113,15 +41,48 @@ def generate_test_scenarios(problem_statement: str) -> str:
     return scenarios.strip()
 
 
-def generate_python_test_cases(problem_statement: str, scenarios: str) -> str:
-    """Generate Python test-case code for *problem_statement* covering *scenarios*."""
+def generate_python_test_cases(problem_statement: str, scenarios: str):
+    """Generate a list of (input, expected_output) tuples for *problem_statement*.
+
+    The underlying prompt requests the LLM to output a JSON array. This helper
+    parses that JSON and returns it as `list[tuple[str, str]]`.
+    """
     llm = _get_openai_llm()
     prompt = ChatPromptTemplate.from_messages([("system", TEST_CASE_PROMPT)])
     chain: Runnable = prompt | llm | StrOutputParser()
-    test_cases = chain.invoke(
-        {"problem_statement": problem_statement, "scenarios": scenarios}
-    )
-    return test_cases.strip()
+    raw = chain.invoke({"problem_statement": problem_statement, "scenarios": scenarios})
+    raw = raw.strip()
+
+    # Attempt to parse as JSON first; fall back to Python literal list.
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError:
+        try:
+            data = ast.literal_eval(raw)
+        except Exception as err:
+            raise ValueError(
+                f"Unable to parse test cases JSON/py literal: {err}\nRaw output:\n{raw}"
+            )
+
+    if not isinstance(data, list):
+        raise ValueError("Parsed test cases must be a list")
+
+    # Normalize into list[tuple[str,str]]
+    test_case_list = []
+    for item in data:
+        if isinstance(item, dict):
+            inp = item.get("input")
+            out = item.get("expected_output") or item.get("output")
+        elif isinstance(item, (list, tuple)) and len(item) == 2:
+            inp, out = item
+        else:
+            raise ValueError(f"Unexpected test case format: {item}")
+        if not isinstance(inp, str) or not isinstance(out, str):
+            raise ValueError("Test case input/output must be strings")
+        # Trim leading/trailing whitespace to avoid accidental grading issues
+        test_case_list.append((inp.strip(), out.strip()))
+
+    return test_case_list
 
 
 def generate_sample_test_cases(problem_statement: str) -> str:
@@ -139,20 +100,15 @@ def generate_sample_test_cases(problem_statement: str) -> str:
 
 
 def case_generator_node(state):
-    """LangGraph node that generates scenarios, full tests, and sample tests."""
+    """LangGraph node that generates scenarios, concrete test cases, and samples."""
     problem_statement = state.get("problem_statement")
     if not problem_statement:
         raise ValueError("No problem statement found in state for test case generation")
 
-    scenarios = generate_test_scenarios(problem_statement)
-    test_cases = generate_python_test_cases(problem_statement, scenarios)
-    sample_test_cases = generate_sample_test_cases(problem_statement)
+    # Skip scenario and sample generation for now – generate test cases directly.
+    test_cases = generate_python_test_cases(problem_statement, "")
 
-    return {
-        "scenarios": [scenarios],
-        "test_cases": [test_cases],
-        "sample_test_cases": [sample_test_cases],
-    }
+    return {"test_cases": test_cases}  # list[tuple[str,str]]
 
 
 if __name__ == "__main__":

@@ -5,6 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import Runnable
 from pg_agent.prompts.solution import SOLUTION_PROMPT
+from typing import List
 
 __all__ = [
     "generate_cpp_solution",
@@ -21,7 +22,21 @@ def _get_claude_llm():
         model="claude-opus-4-20250514",
         anthropic_api_key=api_key,
         temperature=0.1,
+        max_tokens=3200,
     )
+
+
+def _strip_code_fences(text: str) -> str:
+    """Remove surrounding triple-backtick fences (optionally with language tag)."""
+    if text.startswith("```"):
+        lines: List[str] = text.splitlines()
+        # Drop first line (``` or ```cpp)
+        lines = lines[1:]
+        # Drop last line if it's a closing fence
+        if lines and lines[-1].strip().startswith("```"):
+            lines = lines[:-1]
+        return "\n".join(lines).strip()
+    return text.strip()
 
 
 def generate_cpp_solution(problem_statement: str) -> str:
@@ -35,7 +50,7 @@ def generate_cpp_solution(problem_statement: str) -> str:
     )
     chain: Runnable = prompt | llm | StrOutputParser()
     solution = chain.invoke({"problem_statement": problem_statement})
-    return solution.strip()
+    return _strip_code_fences(solution)
 
 
 # ---------------------------------------------------------------------------

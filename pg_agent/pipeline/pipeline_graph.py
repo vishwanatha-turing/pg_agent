@@ -8,6 +8,10 @@ from .topic_selector import topic_selector_node
 from .problem_statement_generator import problem_generator_node
 from .test_case_generator import case_generator_node
 from .solution_generator import solution_generator_node
+from .evaluation_code_generator import evaluation_code_generator_node
+from .evaluation_runner import evaluation_runner_node
+
+# from .evaluation_runner import evaluation_runner_node  # unused for now
 
 __all__ = [
     "PipelineState",
@@ -25,9 +29,9 @@ class PipelineState(TypedDict, total=False):
     # List-based states with add reducer
     topics: Annotated[list[str], add]
     scenarios: Annotated[list[str], add]
-    test_cases: Annotated[list[str], add]
+    test_cases: Annotated[list, add]
     sample_test_cases: Annotated[list[str], add]
-    test_results: Annotated[list[str], add]
+    test_results: Annotated[list[dict], add]
     failed_tests: Annotated[list[str], add]
     retry_history: Annotated[list[str], add]
 
@@ -49,6 +53,7 @@ class PipelineState(TypedDict, total=False):
     archive_metadata: dict
     test_case_metadata: dict
     metadata: dict
+    evaluation_code: str
 
 
 # ---------------------------------------------------------------------------
@@ -75,49 +80,33 @@ def build_pipeline_graph() -> StateGraph:
     graph.add_node("topic_selector", topic_selector_node)
     graph.add_node("problem_generator", problem_generator_node)
     graph.add_node("test_case_generator", case_generator_node)
-    graph.add_node("solution_generator", _passthrough_node)  # TODO: use real node
+    graph.add_node("solution_generator", solution_generator_node)
+    graph.add_node("evaluation_code_generator", evaluation_code_generator_node)
+    graph.add_node("evaluation_runner", evaluation_runner_node)
 
-    # Future placeholders
-    graph.add_node("metadata_setup", _passthrough_node)
-    graph.add_node("join_for_validation", _passthrough_node)
-    graph.add_node("agentic_validator", _passthrough_node)
-    graph.add_node("fix_or_regenerate_test_cases", _passthrough_node)
-    graph.add_node("qwen_evaluation", _passthrough_node)
-    graph.add_node("archive_problem", _passthrough_node)
-    graph.add_node("retry_problem", _passthrough_node)
+    # Commented-out nodes for future expansion
+    # graph.add_node("metadata_setup", _passthrough_node)
+    # graph.add_node("join_for_validation", _passthrough_node)
+    # graph.add_node("agentic_validator", _passthrough_node)
+    # graph.add_node("fix_or_regenerate_test_cases", _passthrough_node)
+    # graph.add_node("qwen_evaluation", _passthrough_node)
+    # graph.add_node("archive_problem", _passthrough_node)
+    # graph.add_node("retry_problem", _passthrough_node)
 
     # Edges
     graph.add_edge(START, "topic_selector")
     graph.add_edge("topic_selector", "problem_generator")
+
+    # Fan-out to generation branches
     graph.add_edge("problem_generator", "solution_generator")
-
-    # Parallel after problem gen
+    graph.add_edge("problem_generator", "evaluation_code_generator")
     graph.add_edge("problem_generator", "test_case_generator")
-    graph.add_edge("problem_generator", "metadata_setup")
 
-    # Join
-    graph.add_edge("solution_generator", "join_for_validation")
-    graph.add_edge("test_case_generator", "join_for_validation")
-    graph.add_edge("metadata_setup", "join_for_validation")
-
-    graph.add_edge("join_for_validation", "agentic_validator")
-
-    graph.add_conditional_edges(
-        "agentic_validator",
-        lambda s: s.get("validation_result", "pass"),
-        {"pass": "qwen_evaluation", "fail": "fix_or_regenerate_test_cases"},
-    )
-
-    graph.add_edge("fix_or_regenerate_test_cases", "agentic_validator")
-
-    graph.add_conditional_edges(
-        "qwen_evaluation",
-        lambda s: s.get("qwen_result", "solved"),
-        {"fail_all": "archive_problem", "solved": "retry_problem"},
-    )
-
-    graph.add_edge("archive_problem", END)
-    graph.add_edge("retry_problem", "problem_generator")
+    # Evaluation runner depends on three generators
+    graph.add_edge("solution_generator", "evaluation_runner")
+    graph.add_edge("evaluation_code_generator", "evaluation_runner")
+    graph.add_edge("test_case_generator", "evaluation_runner")
+    graph.add_edge("evaluation_runner", END)
 
     return graph
 
@@ -141,13 +130,20 @@ def build_test_graph():
     graph.add_node("problem_generator", problem_generator_node)
     graph.add_node("test_case_generator", case_generator_node)
     graph.add_node("solution_generator", solution_generator_node)
+    graph.add_node("evaluation_code_generator", evaluation_code_generator_node)
+    graph.add_node("evaluation_runner", evaluation_runner_node)
 
     graph.add_edge(START, "topic_selector")
     graph.add_edge("topic_selector", "problem_generator")
     graph.add_edge("problem_generator", "test_case_generator")
     graph.add_edge("problem_generator", "solution_generator")
-    graph.add_edge("test_case_generator", END)
-    graph.add_edge("solution_generator", END)
+    graph.add_edge("problem_generator", "evaluation_code_generator")
+
+    # Evaluation runner depends on three generators
+    graph.add_edge("solution_generator", "evaluation_runner")
+    graph.add_edge("evaluation_code_generator", "evaluation_runner")
+    graph.add_edge("test_case_generator", "evaluation_runner")
+    graph.add_edge("evaluation_runner", END)
 
     return graph.compile()
 

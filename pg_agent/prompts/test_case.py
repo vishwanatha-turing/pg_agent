@@ -16,8 +16,16 @@ Problem Statement:
 Output ONLY a list of scenarios, one per line, without any additional text."""
 
 TEST_CASE_PROMPT = """You are an expert competitive programming test case generator.
-Given this problem statement and list of scenarios, generate Python code that creates test cases.
-Each test case should be a tuple of (input, expected_output).
+Given this problem statement and the list of scenarios, output the concrete test cases **directly** instead of code.
+
+Requirements:
+1. Produce a JSON array. Each element is an object with exactly two string keys:
+    • "input"            – The exact stdin string the judge will feed to the program (include new-lines as needed).
+    • "expected_output"  – The exact stdout string expected from a correct solution (include trailing new-line if the format demands it).
+2. Cover every scenario listed.
+3. Keep inputs small but sufficient – up to ~10 KB total.
+4. Ensure **no leading or trailing spaces** in either the `input` or `expected_output` strings.
+5. Do NOT wrap the JSON in markdown fences or add any explanatory text.
 
 Problem Statement:
 {problem_statement}
@@ -25,11 +33,7 @@ Problem Statement:
 Scenarios to cover:
 {scenarios}
 
-Output ONLY the Python code that generates the test cases, ensuring:
-- Each test case tests one or more scenarios
-- Test cases are comprehensive
-- Test cases follow the input/output format specified in the problem
-- Include comments explaining which scenario each test case covers"""
+Output ONLY the JSON array, nothing else. """
 
 SAMPLE_TEST_CASE_PROMPT = """You are an expert competitive programming instructor.
 Given this problem statement, generate sample test cases for initial validation and understanding.
