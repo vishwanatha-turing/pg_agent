@@ -45,29 +45,19 @@ ALGORITHMIC_TOPICS = [
 
 
 def select_topics(n: int = 2) -> List[str]:
-    """
-    Randomly select 1 or 2 topics from the curated list.
-    Args:
-        n (int): Number of topics to select (default 2, but can be 1).
-    Returns:
-        List[str]: List of selected topics.
-    """
+    """Randomly select *n* topics from the curated list (1 ≤ n ≤ 2)."""
     n = max(1, min(n, 2))
     return random.sample(ALGORITHMIC_TOPICS, n)
 
 
+def topic_selector_node(state):
+    """LangGraph node: selects topics and adds them to the state (uses *add* reducer)."""
+    selected_topics = select_topics(n=2)
+    return {"topics": selected_topics}
+
+
+# ---------------------------------------------------------------------------
+# CLI helper for a quick manual test
+# ---------------------------------------------------------------------------
 if __name__ == "__main__":
     print("Selected topics:", select_topics())
-
-
-def topic_selector_node(state):
-    """
-    Node that selects topics and adds them to the state.
-    Uses the add reducer for topics list.
-    """
-    # Get topics using the existing function
-    selected_topics = select_topics(n=2)
-
-    # Return only the fields we're updating
-    # Since topics uses the `add` reducer, it will handle the list update
-    return {"topics": selected_topics}

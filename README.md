@@ -1,6 +1,6 @@
 # LangGraph Studio – Competitive Programming Problem Generator
 
-This repository contains a LangGraph pipeline that automatically **creates, solves, and validates competitive-programming problems**.  The pipeline lives inside the `studio/` folder and can be explored interactively with **LangGraph Studio**.
+This repository contains a LangGraph pipeline that automatically **creates, solves, and validates competitive-programming problems**.  The code now lives inside an installable Python package (`pg_agent/`).  You can still explore it visually with **LangGraph Studio**, but you no longer need the legacy `studio/` folder.
 
 ---
 ## 1 . Prerequisites
@@ -9,7 +9,7 @@ This repository contains a LangGraph pipeline that automatically **creates, solv
 • A terminal with `pip` available  
 • API keys for the LLM providers you wish to use (e.g. OpenAI, Anthropic).
 
-> **Tip:** You do **not** need to install LangChain or LangGraph globally. They are listed in `studio/requirements.txt` and will be installed in the next step.
+> **Tip:** You do **not** need to install LangChain or LangGraph globally. Everything is declared in the root-level `requirements.txt` (or `pyproject.toml`) and will be installed in the next step.
 
 ---
 ## 2 . Setup
@@ -23,11 +23,12 @@ cd pg_agent
 python -m venv .venv
 source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 
-# 3. Install the pipeline dependencies
-pip install -r studio/requirements.txt
+# 3. Install the pipeline dependencies (editable install recommended for dev)
+pip install -r requirements.txt        # or:  pip install -e .[dev]
 
 # 4. Provide your API keys (OpenAI, Anthropic, etc.)
-cp studio/.env.example .env        # optional helper file, if present
+# If an `.env.example` file exists, copy it over and fill in your keys:
+# cp .env.example .env
 # then edit .env and fill in the keys, e.g.
 # OPENAI_API_KEY="sk-..."
 # ANTHROPIC_API_KEY="sk-anthropic-..."
@@ -37,9 +38,11 @@ cp studio/.env.example .env        # optional helper file, if present
 ## 3 . Launching LangGraph Studio
 
 ```bash
+# First time only — install your *local* package in editable mode so Studio can
+# import it as a proper Python package (no need to repeat after each change):
+pip install -e .
 
 # Quick dev server (hot-reload):
-cd studio
 langgraph dev 
 ```
 
@@ -58,7 +61,11 @@ This will start a local web server on `http://localhost:8000/` (the exact port i
 If you just want to run the pipeline headless:
 
 ```bash
-python studio/pipeline_graph.py  # invokes test_pipeline() at the bottom of the file
+python -m pg_agent.pipeline.pipeline_graph   # runs __main__ section
+python - <<'PY'
+from pg_agent.pipeline import test_pipeline
+print(test_pipeline().invoke({}))
+PY
 ```
 
 ---
@@ -66,15 +73,14 @@ python studio/pipeline_graph.py  # invokes test_pipeline() at the bottom of the 
 
 ```
 pg_agent/
-├─ studio/                # All LangGraph code lives here
-│  ├─ pipeline_graph.py   # 🧠 Main pipeline definition
-│  ├─ topic_selector.py   # 🔍 Picks a random algorithmic topic
-│  ├─ problem_statement_generator.py
-│  ├─ test_case_generator.py
-│  ├─ solution_generator.py
-│  └─ ...
-├─ Data Requirements Document ...pdf  # reference paper – not needed for running
-└─ README.md              # (this file)
+├─ pg_agent/                 # Installable package
+│  ├─ pipeline/              # LangGraph nodes & graph
+│  ├─ prompts/
+│  └─ utils/
+├─ tests/
+├─ langgraph.json
+├─ requirements.txt / pyproject.toml
+└─ README.md
 ```
 
 ---
@@ -82,7 +88,7 @@ pg_agent/
 
 | Symptom | Fix |
 |---------|------|
-| `ModuleNotFoundError` for LangGraph / LangChain | Check that you installed dependencies from **studio/requirements.txt** inside the active virtualenv. |
+| `ModuleNotFoundError` for LangGraph / LangChain | Check that you installed dependencies from **requirements.txt** inside the active virtualenv. |
 | Browser shows blank Studio page | Verify the terminal shows `Uvicorn running on ...` and nothing crashed. Refresh. |
 | "401 / 403" from provider | Double-check `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, etc. |
 

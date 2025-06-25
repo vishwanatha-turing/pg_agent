@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pg_agent"
+version = "0.1.0"
+description = "LangGraph pipeline that generates, solves, and validates competitive programming problems."
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=0.0.27",
+    "langchain-core>=0.1.27",
+    "langchain-openai>=0.0.8",
+    "langchain-anthropic>=0.1.1",
+    "python-dotenv>=1.0.0",
+    "typing-extensions>=4.9.0",
+    "pydantic>=2.6.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.0.0",
+    "ruff>=0.4.0",
+    "pytest>=8.0.0",
+    "pre-commit>=3.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["pg_agent"] 
