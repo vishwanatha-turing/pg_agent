@@ -17,3 +17,6 @@ pydantic>=2.6.1  # For data validation
 
 # Local package (editable install suggested for dev)
 -e . 
+
+# Dockersupport
+docker>=6.0.1  # For Docker interactions
