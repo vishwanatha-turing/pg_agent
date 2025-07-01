@@ -36,7 +36,7 @@ TEST_GENERATOR_CODE = """
 
 int main() {
     // Create 3 simple test cases
-    for (int i = 1; i <= 3; ++i) {
+    for (int i = 1; i <= 10; ++i) {
         std::ofstream outfile("testcases/" + std::to_string(i) + ".in");
         outfile << i * 2 << " " << i * 3 << std::endl; // e.g., "2 3", "4 6", "6 9"
         outfile.close();
