@@ -1,9 +1,0 @@
-You're a test case generator. Given the following list of constraints, create up to 25 diverse and tricky test inputs.
-
-Handle edge cases like:
-- min, min-1, max, max+1
-- empty list
-- duplicates (if allowed or restricted)
-- sorted vs unsorted (if sorted is specified)
-
-Return a list of test cases in valid JSON.

@@ -22,6 +22,7 @@ from .evaluation_runner import (
     run_evaluation,
     evaluation_runner_node,
 )
+from .edge_case_suggester import graph as edge_case_suggester_graph  # noqa: F401
 
 __all__ = [
     "select_topics",
@@ -40,4 +41,5 @@ __all__ = [
     "generate_evaluation_code",
     "evaluation_runner_node",
     "run_evaluation",
+    "edge_case_suggester_graph",
 ]

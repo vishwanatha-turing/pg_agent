@@ -49,4 +49,4 @@ There is one 0-diff pair in the array: `(1, 1)`.
 
 - `1 <= nums.length <= 10^4`
 - `-10^7 <= nums[i] <= 10^7`
-- `0 <= k <= 10^7`
+- `0 <= k <= 10^7` 
