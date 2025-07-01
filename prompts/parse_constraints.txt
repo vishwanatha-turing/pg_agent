@@ -1,8 +1,0 @@
-Extract input constraints from the problem description below. Return them as a JSON array of objects.
-Each object should include:
-- name
-- type (int, list[int], etc.)
-- min or max if applicable
-- extra properties like “sorted”, “unique”, etc.
-
-Only include actual constraints, no explanations.
