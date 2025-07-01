@@ -5,7 +5,7 @@ This repository contains a LangGraph pipeline that automatically **creates, solv
 ---
 ## 1 . Prerequisites
 
-• Python 3.10 + (the code is tested with 3.12)  
+• Python 3.11 or higher (the code is tested with 3.12)
 • A terminal with `pip` available  
 • API keys for the LLM providers you wish to use (e.g. OpenAI, Anthropic).
 
@@ -46,7 +46,7 @@ pip install -e .
 langgraph dev 
 ```
 
-This will start a local web server on `http://localhost:8000/` (the exact port is shown in the terminal). Open the URL in your browser to:
+This will start a local web server on `http://localhost:2024/` (the exact port is shown in the terminal). Open the URL in your browser to:
 
 * Visualise the full pipeline graph
 * Inspect node inputs/outputs
