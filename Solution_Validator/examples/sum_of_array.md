@@ -14,7 +14,7 @@ A **k-diff pair** is an integer pair `(nums[i], nums[j])`, where:
 
 ### Examples
 
-#### Example 1:
+### Example 1:
 **Input:**  
 `nums = [3,1,4,1,5], k = 2`  
 **Output:**  

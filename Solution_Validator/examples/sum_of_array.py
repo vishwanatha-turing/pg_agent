@@ -16,4 +16,4 @@ def findPairs(nums, k):
             if num + k in freq:
                 count += 1
 
-    return count
+    return count # Return the count of pairs

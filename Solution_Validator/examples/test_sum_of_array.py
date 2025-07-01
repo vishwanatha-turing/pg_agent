@@ -13,4 +13,4 @@ def test_case_4():
     assert findPairs([1, 2, 3, 4, 5], 0) == 0
 
 def test_case_5():
-    assert findPairs([1, 1, 1, 2, 2], 0) == 2
+    assert findPairs([1, 1, 1, 2, 2], 0) == 2	
