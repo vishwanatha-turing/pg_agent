@@ -1,8 +1,11 @@
 from langgraph.graph import StateGraph
-from run_tests import run_tests_fn
-from critique import critique_fn
-from verdict import verdict_fn
-
+from .run_tests import run_tests_fn
+from .critique import critique_fn
+from .verdict import verdict_fn
+from pipeline.run_tests import run_tests_fn
+from pipeline.critique import critique_fn
+from pipeline.verdict import verdict_fn
+# This file builds the state graph for the pipeline, connecting the run_tests, critique, and verdict functions.
 def build_graph():
     from typing import TypedDict
 
