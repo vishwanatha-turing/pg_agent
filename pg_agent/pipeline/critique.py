@@ -1,18 +1,16 @@
 import os
 import openai
-from dotenv import load_dotenv  # Load from .env file if needed
+from dotenv import load_dotenv
+from prompts.critique import CRITIQUE_PROMPT 
 
-# Load environment variables from .env (if present)
 load_dotenv()
-
-# Set OpenAI API key
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def call_llm(prompt):
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4",  # Or use "gpt-3.5-turbo" for lower cost
+            model="gpt-4",
             messages=[
                 {
                     "role": "system",
@@ -33,19 +31,13 @@ def call_llm(prompt):
 
 def critique_fn(state):
     try:
-        # Load and format the prompt template
-        with open("prompts/critique.py", "r", encoding="utf-8") as f:
-            template = f.read()
-
-        prompt = template.format(
+        prompt = CRITIQUE_PROMPT.format(
             problem=state["problem"],
             solution_code=state["solution_code"],
             results=state["results"]["output"]
         )
 
-        # Call LLM and store response
-        response = call_llm(prompt)
-        state["critique"] = response
+        state["critique"] = call_llm(prompt)
 
     except Exception as e:
         state["critique"] = f"[Critique generation failed: {e}]"
