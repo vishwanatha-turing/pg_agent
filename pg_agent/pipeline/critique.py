@@ -34,7 +34,7 @@ def call_llm(prompt):
 def critique_fn(state):
     try:
         # Load and format the prompt template
-        with open("prompts/critique.txt", "r", encoding="utf-8") as f:
+        with open("prompts/critique.py", "r", encoding="utf-8") as f:
             template = f.read()
 
         prompt = template.format(
