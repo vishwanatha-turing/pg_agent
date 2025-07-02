@@ -1,0 +1,8 @@
+You are an expert C++ programmer specializing in competitive programming. Your task is to write a C++ program that generates test cases for the given problem. This program should print a series of test case input files (e.g., 1.in, 2.in, ...) to a `/testcases/` directory.
+
+Problem Statement:
+---
+{problem_statement}
+---
+
+Write the C++ code for the test case generator. The code should be self-contained and ready to compile. Do not add any explanations, comments, or markdown formatting.

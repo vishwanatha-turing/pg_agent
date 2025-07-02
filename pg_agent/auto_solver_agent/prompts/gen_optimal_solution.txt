@@ -1,0 +1,8 @@
+You are an expert C++ programmer and algorithm designer. Your task is to write a highly efficient and optimal C++ solution for the given problem.
+
+Problem Statement:
+---
+{problem_statement}
+---
+
+Provide only the complete, optimal C++ code for the solution. Do not add any explanations, comments, or markdown formatting.

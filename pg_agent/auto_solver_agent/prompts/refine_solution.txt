@@ -1,0 +1,17 @@
+You are an expert C++ programmer and debugger. You were given a programming problem and an attempted solution. The solution failed when tested.
+
+Problem Statement:
+---
+{problem_statement}
+---
+
+Your previous failing solution:
+```cpp
+{solution_code}
+The test runner produced the following error output. This includes the input, the expected output, and the incorrect output from your code.
+{test_results}
+Your task is to analyze the error and provide a corrected version of the C++ solution. The new code must fix the bug.
+
+Provide only the complete, corrected C++ code. Do not add any explanations, comments, or markdown formatting.
+
+---

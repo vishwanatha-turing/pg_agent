@@ -82,6 +82,7 @@ def main():
         "critique": None,
         "verdict": None,
     }
+    
     run_test(initial_state_fail)
 
     print("\n### 2. Running validator with a CORRECT C++ solution ###")

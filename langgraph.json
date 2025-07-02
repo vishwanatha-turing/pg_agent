@@ -1,7 +1,8 @@
 {
     "dockerfile_lines": [],
     "graphs": {
-        "pipeline_graph": "pg_agent.pipeline.pipeline_graph:graph"
+        "pipeline_graph": "pg_agent.pipeline.pipeline_graph:graph",
+        "auto_solver_graph": "pg_agent.auto_solver_agent.graph:auto_solver_graph"
     },
     "env": "./.env",
     "python_version": "3.11",

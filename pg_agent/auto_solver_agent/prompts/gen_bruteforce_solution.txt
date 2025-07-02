@@ -1,0 +1,8 @@
+You are an expert C++ programmer. Your task is to write a simple, clear, and correct "bruteforce" or straightforward solution for the given problem. This solution does not need to be the most optimal, but it must be 100% correct solution.
+
+Problem Statement:
+---
+{problem_statement}
+---
+
+Provide only the complete C++ code for the solution. Do not add any explanations, comments, or markdown formatting.
