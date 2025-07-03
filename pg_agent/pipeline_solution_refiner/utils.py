@@ -32,7 +32,7 @@ def get_o3_llm(temp=1):
     if not key:
         raise EnvironmentError("OPENAI_API_KEY not set")
     return ChatOpenAI(
-        model="o3-2025-04-16", temperature=temp, reasoning={"effort": "low"}
+        model="o3-2025-04-16", temperature=temp, reasoning={"effort": "medium"}
     )
 
 
