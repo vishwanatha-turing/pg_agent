@@ -1,7 +1,9 @@
 {
     "dockerfile_lines": [],
     "graphs": {
-        "edge_case_suggester": "pg_agent.pipeline.edge_case_suggester:graph"
+        "edge_case_suggester": "pg_agent.pipeline.edge_case_suggester:graph",
+        "pipeline_graph": "pg_agent.pipeline.pipeline_graph:graph",
+        "solution_refiner": "pg_agent.pipeline_solution_refiner:solution_graph"
     },
     "env": "./.env",
     "python_version": "3.11",
