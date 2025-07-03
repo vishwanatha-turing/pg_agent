@@ -10,12 +10,13 @@ def debug_model(model_name: str):
         # quick ping
         response = client.responses.create(
             model=model_name,
-            reasoning={"effort": "medium"},
-            input=[{"role": "user", "content": "Latest ufc updates"}],
+            reasoning={"effort": "low"},
+            input=[{"role": "user", "content": "How many players in a cricket team?"}],
             tools=[{"type": "web_search_preview"}],
         )
         print(f"{model_name}: success")
         print(f"Response: {response.output_text}")
+        print(f"Response type: {type(response)}")
     except BadRequestError as e:
         print(f"{model_name}: {e}")
     except OpenAIError as e:

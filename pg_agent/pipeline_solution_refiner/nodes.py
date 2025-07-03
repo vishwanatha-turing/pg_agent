@@ -12,6 +12,7 @@ from .utils import (
     get_llm,
     get_o3_llm,
     strip_code_fences,
+    extract_content_from_o3_response,
     solution_prompt,
     fix_prompt,
     compile_and_run,
@@ -40,7 +41,11 @@ def llm_solution(state: RefineState):
         prompt = solution_prompt
         variables = {"problem_statement": state["problem_statement"]}
     msg = (prompt | llm).invoke(variables)  # AIMessage
-    cpp_code = strip_code_fences(msg.content)
+    print(f"LLM response: {msg.content}")
+
+    # Extract content from O3's structured response format
+    content = extract_content_from_o3_response(msg)
+    cpp_code = strip_code_fences(content)
     return {"cpp_solution": cpp_code}
 
 

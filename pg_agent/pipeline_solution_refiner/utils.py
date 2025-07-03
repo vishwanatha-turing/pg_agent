@@ -32,7 +32,7 @@ def get_o3_llm(temp=1):
     if not key:
         raise EnvironmentError("OPENAI_API_KEY not set")
     return ChatOpenAI(
-        model="o3-2025-04-16", temperature=temp, reasoning={"effort": "medium"}
+        model="o3-2025-04-16", temperature=temp, reasoning={"effort": "low"}
     )
 
 
@@ -186,3 +186,18 @@ solution_prompt = ChatPromptTemplate.from_messages(
     [("system", GENERATE_SOLUTION_PROMPT)]
 )
 fix_prompt = ChatPromptTemplate.from_messages([("system", FIX_SOLUTION_PROMPT)])
+
+
+def extract_content_from_o3_response(msg):
+    """Extract content from O3's structured response format."""
+    if isinstance(msg.content, list) and msg.content:
+        # O3 returns list of reasoning steps
+        # Get the text from the last step (usually contains the final answer)
+        last_step = msg.content[-1]
+        if isinstance(last_step, dict) and "text" in last_step:
+            return last_step["text"]
+        else:
+            return str(last_step)
+    else:
+        # Fallback for other formats
+        return str(msg.content)
