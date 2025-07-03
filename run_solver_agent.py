@@ -1,32 +1,16 @@
 import os
+import sys
 from dotenv import load_dotenv
 from pg_agent.auto_solver_agent.graph import auto_solver_graph
 from pg_agent.auto_solver_agent.schemas import SolverState
 
-# --- Load Environment Variables ---
-print("Attempting to load .env file...")
 load_dotenv()
-print(".env file loaded (if it exists).")
 
-# --- DEBUGGING CHECK ---
-# We will now check if the environment variable was loaded successfully.
 api_key = os.getenv("ANTHROPIC_API_KEY")
-print("\n--- API Key Check ---")
-if api_key:
-    # For security, we only print the first few and last few characters.
-    print(f"SUCCESS: Anthropic API Key found. It starts with '{api_key[:5]}' and ends with '{api_key[-4:]}'.")
-else:
-    print("FAILURE: Anthropic API Key was NOT found in the environment.")
-    print("Please check the following:")
-    print("1. Is the .env file in the same directory as this script?")
-    print("2. Is the variable name exactly ANTHROPIC_API_KEY in the .env file?")
-    print("3. Did you save the .env file?")
-    # We exit here because the script is guaranteed to fail without the key.
-    exit() # Stop the script
-print("---------------------\n")
+if not api_key:
+    print("FATAL ERROR: ANTHROPIC_API_KEY not found in .env file or environment.")
+    sys.exit(1)
 
-
-# --- Define the problem to solve ---
 PROBLEM_STATEMENT = """
 Write a C++ program that solves the "Two Sum" problem.
 Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
@@ -47,9 +31,11 @@ def main():
         "problem_statement": PROBLEM_STATEMENT.strip(),
         "num_test_generations": 3,
         "max_iterations": 5,
+        "api_key": api_key,
         "bruteforce_code": None,
         "test_generator_code": None,
         "solution_code": None,
+        "test_cases_dir_path": None, # <-- ADD THIS LINE
         "test_results": None,
         "iteration_count": 0,
         "final_verdict": "PENDING",

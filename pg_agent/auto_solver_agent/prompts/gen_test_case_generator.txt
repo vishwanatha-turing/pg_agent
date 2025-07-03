@@ -1,8 +1,56 @@
-You are an expert C++ programmer specializing in competitive programming. Your task is to write a C++ program that generates test cases for the given problem. This program should print a series of test case input files (e.g., 1.in, 2.in, ...) to a `/testcases/` directory.
+You are an expert C++ programmer specializing in competitive programming. Your task is to write a C++ program that generates a variety of high-quality test cases for the given problem.
 
-Problem Statement:
+This program, when compiled and run, should create multiple input files (e.g., `1.in`, `2.in`, `3.in`...) in the current directory.
+
+**Key Requirements:**
+- Use a random number generator to create diverse inputs.
+- Include edge cases (e.g., minimum/maximum values, zero, negative numbers if applicable).
+- The generated test cases must strictly follow the input format described in the problem statement.
+- Create Small Testcases so that brute-force solution can solve them.
+- Use #include <bits/stdc++.h> so its most probable that it will run without issues.
+
+**Problem Statement:**
 ---
 {problem_statement}
 ---
 
-Write the C++ code for the test case generator. The code should be self-contained and ready to compile. Do not add any explanations, comments, or markdown formatting.
+Write the complete C++ code for the test case generator. The code should be self-contained, include necessary headers like `<random>`, and be ready to compile. Do not add any explanations, comments, or markdown formatting.
+
+---
+**Example:**
+
+*Problem Statement:*
+Given two integers on a single line, read them and print their sum.
+
+*Your Output (Test Case Generator C++ Code):*
+```cpp
+#include <bits/stdc++.h>
+
+int main() {{
+    // Seed the random number generator
+    unsigned seed = std::chrono::high_resolution_clock::now().time_since_epoch().count();
+    std::mt19937 gen(seed);
+    std::uniform_int_distribution<int> distrib(-1000, 1000);
+
+    // Create 10 random test cases
+    for (int i = 1; i <= 10; ++i) {{
+        std::ofstream outfile(std::to_string(i) + ".in");
+        
+        int a = distrib(gen);
+        int b = distrib(gen);
+        
+        outfile << a << " " << b << std::endl;
+        outfile.close();
+    }}
+    
+    // Add specific edge cases
+    std::ofstream edge_case_1("11.in");
+    edge_case_1 << 0 << " " << 0 << std::endl;
+    edge_case_1.close();
+
+    std::ofstream edge_case_2("12.in");
+    edge_case_2 << -1000 << " " << 1000 << std::endl;
+    edge_case_2.close();
+
+    return 0;
+}}

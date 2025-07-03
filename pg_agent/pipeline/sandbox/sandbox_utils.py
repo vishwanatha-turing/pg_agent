@@ -25,17 +25,21 @@ def _run_container(image_tag: str, command: list, files_to_copy: dict, directori
             mem_limit="512m",
             cpu_shares=1024,
         )
-        # Copy necessary files and directories
         for src, dst in files_to_copy.items():
             _copy_to_container(container, src, dst)
+        
+        # --- CORRECTED DIRECTORY COPY LOGIC ---
         if directories_to_copy:
-            for src_dir, dst_dir in directories_to_copy.items():
-                # Create a tar of the directory to copy it
-                tar_stream = io.BytesIO()
-                with tarfile.open(fileobj=tar_stream, mode='w:gz') as tar:
-                    tar.add(src_dir, arcname='.')
-                tar_stream.seek(0)
-                container.put_archive(path=dst_dir, data=tar_stream)
+            src_dir = list(directories_to_copy.keys())[0]
+            dst_path_in_container = list(directories_to_copy.values())[0]
+            
+            tar_stream = io.BytesIO()
+            with tarfile.open(fileobj=tar_stream, mode='w:gz') as tar:
+                # Add the source directory, naming it 'testcases' at the root of the archive.
+                tar.add(src_dir, arcname='testcases')
+            tar_stream.seek(0)
+            # This will create /usr/src/app/testcases inside the container
+            container.put_archive(path=dst_path_in_container, data=tar_stream)
 
         container.start()
         result = container.wait()
@@ -46,14 +50,10 @@ def _run_container(image_tag: str, command: list, files_to_copy: dict, directori
             container.remove(force=True)
 
 def generate_test_case_batches(test_generator_code: str, num_batches: int) -> Path:
-    """
-    Runs the test case generator in Docker to create multiple batches of test files.
-    Returns the path to the temporary directory containing all generated test batches.
-    """
+    """Runs the test case generator in Docker to create multiple batches of test files."""
     client = docker.from_env()
     image_tag = "cpp-validator-sandbox"
     
-    # Build image if it doesn't exist
     try:
         client.images.get(image_tag)
     except docker.errors.ImageNotFound:
@@ -61,9 +61,6 @@ def generate_test_case_batches(test_generator_code: str, num_batches: int) -> Pa
         sandbox_dir = Path(__file__).parent
         client.images.build(path=str(sandbox_dir), tag=image_tag, rm=True)
 
-    # Use a single temp directory to hold all generated test case folders
-    # This directory will be deleted automatically when the 'with' block exits
-    # We need to manage its lifecycle outside this function.
     test_cases_root_dir = Path(tempfile.mkdtemp())
     
     with tempfile.NamedTemporaryFile(mode='w', suffix='.cpp', delete=False) as gen_f:
@@ -72,20 +69,19 @@ def generate_test_case_batches(test_generator_code: str, num_batches: int) -> Pa
 
     for i in range(1, num_batches + 1):
         print(f"Generating test case batch #{i}...")
-        command = ["./runner.sh", "generate", str(i)]
+        command = ["generate", str(i)]
         files_to_copy = {generator_src_path: "/usr/src/app/testcaseGenerator.cpp"}
         
         status_code, output = _run_container(image_tag, command, files_to_copy)
         if status_code != 0:
-            raise Exception(f"Failed to generate test case batch #{i}: {output}")
+            os.remove(generator_src_path)
+            raise Exception(f"Failed to generate test case batch #{i}:\n{output}")
 
     os.remove(generator_src_path)
     return test_cases_root_dir
 
 def run_solution_against_tests(solution_code: str, bruteforce_code: str, test_cases_dir: Path) -> dict:
-    """
-    Runs the solution and bruteforce code against all pre-generated test cases.
-    """
+    """Runs the solution and bruteforce code against all pre-generated test cases."""
     image_tag = "cpp-validator-sandbox"
     
     with tempfile.TemporaryDirectory() as temp_dir:
@@ -95,16 +91,26 @@ def run_solution_against_tests(solution_code: str, bruteforce_code: str, test_ca
         bruteforce_path = Path(temp_dir) / "bruteforce.cpp"
         bruteforce_path.write_text(bruteforce_code)
 
-        command = ["./runner.sh", "execute"]
+        command = ["execute"]
         files_to_copy = {
             str(solution_path): "/usr/src/app/suspectedSolution.cpp",
             str(bruteforce_path): "/usr/src/app/bruteforce.cpp",
         }
-        # Copy the entire directory of generated test cases
-        dirs_to_copy = {str(test_cases_dir): "/usr/src/app/testcases"}
+        # Copy the directory of generated tests into the container's app directory
+        dirs_to_copy = {str(test_cases_dir): "/usr/src/app"}
 
         status_code, output = _run_container(image_tag, command, files_to_copy, dirs_to_copy)
 
+    # --- CORRECTED ERROR HANDLING ---
+    # If the container itself fails (non-zero status), it's a test failure.
+    if status_code != 0:
+        return {
+            "passed": 0,
+            "failed": 1, # Crucially, report at least one failure
+            "details": output
+        }
+
+    # Otherwise, parse the output from the script
     passed_match = re.search(r"PASSED: (\d+)", output)
     failed_match = re.search(r"FAILED: (\d+)", output)
     

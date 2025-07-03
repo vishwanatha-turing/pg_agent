@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 from pathlib import Path
 from langchain_core.prompts import ChatPromptTemplate
@@ -6,145 +7,116 @@ from langchain_anthropic import ChatAnthropic
 from ..pipeline.sandbox.sandbox_utils import generate_test_case_batches, run_solution_against_tests
 from .schemas import SolverState
 
-# --- Load the API Key Directly ---
-# We load the key here once when the module is imported.
-# This is guaranteed to happen in the main thread where the .env file was loaded.
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+# --- Helper functions (unchanged) ---
+def _extract_cpp_code(response_content: str) -> str:
+    match = re.search(r'```(?:[a-zA-Z\+]+)?\s*([\s\S]+?)\s*```', response_content)
+    if match: return match.group(1).strip()
+    return response_content.strip()
 
-print("\n--- API Key Check ---")
-if ANTHROPIC_API_KEY:
-    # For security, we only print the first few and last few characters.
-    print(f"SUCCESS: Anthropic API Key found. It starts with '{ANTHROPIC_API_KEY[:5]}' and ends with '{ANTHROPIC_API_KEY[-4:]}'.")
-else:
-    print("FAILURE: Anthropic API Key was NOT found in the environment.")
-    print("Please check the following:")
-    print("1. Is the .env file in the same directory as this script?")
-    print("2. Is the variable name exactly ANTHROPIC_API_KEY in the .env file?")
-    print("3. Did you save the .env file?")
-    # We exit here because the script is guaranteed to fail without the key.
-    exit()
-# --- Pre-build Chains for each Node ---
-# Now, we explicitly pass the api_key to the constructor.
+def _sanitize_filename(text: str) -> str:
+    text = re.sub(r'[<>:"/\\|?*]', '', text)
+    text = text.replace(' ', '_')
+    return text.lower()[:50]
 
-# --- Chain for Bruteforce Generation ---
-bruteforce_prompt_template = ChatPromptTemplate.from_template(
-    (Path(__file__).parent / "prompts/gen_bruteforce_solution.txt").read_text()
-)
-bruteforce_chain = bruteforce_prompt_template | ChatAnthropic(model="claude-3-opus-20240229", api_key=ANTHROPIC_API_KEY)
+def get_llm_client():
+
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    return ChatAnthropic(model="claude-3-7-sonnet-20250219", api_key=api_key, max_tokens=8192)
+
+# --- Node Definitions (Updated to use state for path) ---
 
 def gen_bruteforce_node(state: SolverState) -> dict:
-    """Generates the bruteforce C++ solution using its dedicated chain."""
     print("--- Generating: bruteforce_code ---")
-    response = bruteforce_chain.invoke({"problem_statement": state["problem_statement"]})
-    return {"bruteforce_code": response.content}
-
-
-# --- Chain for Optimal Solution Generation ---
-optimal_prompt_template = ChatPromptTemplate.from_template(
-    (Path(__file__).parent / "prompts/gen_optimal_solution.txt").read_text()
-)
-optimal_chain = optimal_prompt_template | ChatAnthropic(model="claude-3-opus-20240229", api_key=ANTHROPIC_API_KEY)
+    chain = ChatPromptTemplate.from_template((Path(__file__).parent / "prompts/gen_bruteforce_solution.txt").read_text()) | get_llm_client()
+    response = chain.invoke({"problem_statement": state["problem_statement"]})
+    return {"bruteforce_code": _extract_cpp_code(response.content)}
 
 def gen_optimal_solution_node(state: SolverState) -> dict:
-    """Generates the initial optimal C++ solution using its dedicated chain."""
     print("--- Generating: solution_code ---")
-    response = optimal_chain.invoke({"problem_statement": state["problem_statement"]})
-    return {"solution_code": response.content}
+    chain = ChatPromptTemplate.from_template((Path(__file__).parent / "prompts/gen_optimal_solution.txt").read_text()) | get_llm_client()
+    response = chain.invoke({"problem_statement": state["problem_statement"]})
+    return {"solution_code": _extract_cpp_code(response.content)}
 
-
-# --- Chain for Test Case Generator Code ---
-test_gen_prompt_template = ChatPromptTemplate.from_template(
-    (Path(__file__).parent / "prompts/gen_test_case_generator.txt").read_text()
-)
-test_gen_chain = test_gen_prompt_template | ChatAnthropic(model="claude-3-opus-20240229", api_key=ANTHROPIC_API_KEY)
-
-# Keep a global reference to the test cases directory path
-TEST_CASES_DIR = None
-
-def gen_and_run_test_cases_node(state: SolverState) -> dict:
-    """Generates the test case generator code AND runs it to create persistent test batches."""
-    global TEST_CASES_DIR
+# --- NEW: Node to generate ONLY the test case generator code ---
+def gen_test_case_code_node(state: SolverState) -> dict:
+    """Generates the C++ code for the test case generator program."""
     print("--- Generating: test_generator_code ---")
-    
-    response = test_gen_chain.invoke({"problem_statement": state["problem_statement"]})
-    test_gen_code = response.content
-    
+    chain = ChatPromptTemplate.from_template((Path(__file__).parent / "prompts/gen_test_case_generator.txt").read_text()) | get_llm_client()
+    response = chain.invoke({"problem_statement": state["problem_statement"]})
+    return {"test_generator_code": _extract_cpp_code(response.content)}
+
+# --- NEW: Node to RUN the test case generator code in the sandbox ---
+def run_test_case_generator_node(state: SolverState) -> dict:
+    """Runs the generated code to create persistent test case batches."""
     print(f"--- Creating {state['num_test_generations']} batches of test cases ---")
     try:
-        if TEST_CASES_DIR and Path(TEST_CASES_DIR).exists():
-            shutil.rmtree(TEST_CASES_DIR)
-            
-        TEST_CASES_DIR = generate_test_case_batches(
-            test_generator_code=test_gen_code,
+        test_cases_dir = generate_test_case_batches(
+            test_generator_code=state["test_generator_code"],
             num_batches=state['num_test_generations']
         )
-        print(f"Test cases generated and stored at: {TEST_CASES_DIR}")
+        print(f"Test cases generated and stored at: {test_cases_dir}")
+        # Return the path to be stored in the state
+        return {"test_cases_dir_path": str(test_cases_dir)}
     except Exception as e:
+        # If generation fails, we must stop the graph by reporting a failure
         return {"test_results": {"failed": 1, "details": f"FATAL: Could not generate test cases. Error: {e}"}}
 
-    return {"test_generator_code": test_gen_code}
-
-
-# --- Node for running tests (no LLM, so no chain needed) ---
 def run_tests_node(state: SolverState) -> dict:
-    """Runs the solution against all persistent test case batches."""
-    global TEST_CASES_DIR
+    """Runs the solution against the test cases from the path in the state."""
     print("--- 🚀 Running Sandbox Tests on All Batches ---")
+    
+    # Read the path from the state, not a global variable
+    test_cases_dir = state.get("test_cases_dir_path")
 
-    if not TEST_CASES_DIR or not Path(TEST_CASES_DIR).exists():
-        return {"test_results": {"failed": 1, "details": "FATAL: Test cases directory not found."}}
+    if not test_cases_dir or not Path(test_cases_dir).exists():
+        return {"test_results": {"failed": 1, "details": "FATAL: Test cases directory path not found in state or directory does not exist."}}
 
     results = run_solution_against_tests(
         solution_code=state["solution_code"],
         bruteforce_code=state["bruteforce_code"],
-        test_cases_dir=TEST_CASES_DIR
+        test_cases_dir=Path(test_cases_dir)
     )
-    
     print(f"--- ✅ Sandbox Finished: Passed: {results['passed']}, Failed: {results['failed']} ---")
-    return {
-        "test_results": results,
-        "iteration_count": state.get("iteration_count", 0) + 1
-    }
-
-
-# --- Chain for Refining the Solution ---
-refine_prompt_template = ChatPromptTemplate.from_template(
-    (Path(__file__).parent / "prompts/refine_solution.txt").read_text()
-)
-refine_chain = refine_prompt_template | ChatAnthropic(model="claude-3-opus-20240229", api_key=ANTHROPIC_API_KEY)
+    return {"test_results": results, "iteration_count": state.get("iteration_count", 0) + 1}
 
 def refine_solution_node(state: SolverState) -> dict:
-    """Refines the solution code based on test failures using its dedicated chain."""
+    """Refines the solution code based on test failures."""
     print(f"--- Refining Solution (Attempt #{state['iteration_count'] + 1}) ---")
-    response = refine_chain.invoke({
+    chain = ChatPromptTemplate.from_template((Path(__file__).parent / "prompts/refine_solution.txt").read_text()) | get_llm_client()
+    response = chain.invoke({
         "problem_statement": state["problem_statement"],
         "solution_code": state["solution_code"],
         "test_results": state["test_results"]["details"],
     })
-    return {"solution_code": response.content}
+    return {"solution_code": _extract_cpp_code(response.content)}
 
-
-# --- Node for cleanup (no LLM) ---
 def cleanup_node(state: SolverState) -> dict:
-    """Cleans up temporary directories and sets final verdict."""
-    global TEST_CASES_DIR
-    print("--- Cleaning Up and Finalizing ---")
+    """Saves files and cleans up the temporary test directory from the path in the state."""
+    print("--- Cleaning Up and Saving Final State ---")
     
-    if TEST_CASES_DIR and Path(TEST_CASES_DIR).exists():
-        shutil.rmtree(TEST_CASES_DIR)
-        print(f"Removed temporary test directory: {TEST_CASES_DIR}")
-        TEST_CASES_DIR = None
+    # Read the path from the state for cleanup
+    test_cases_dir_path = state.get("test_cases_dir_path")
     
-    verdict = "SUCCESS" if state["test_results"]["failed"] == 0 else "FAILURE"
+    verdict = "SUCCESS" if state.get("test_results", {}).get("failed", 1) == 0 else "FAILURE"
     
-    if verdict == "SUCCESS":
-        problem_name = state["problem_statement"].split('\n')[0].replace(' ', '_').lower()[:50]
-        output_dir = Path("solved_problems") / problem_name
-        output_dir.mkdir(parents=True, exist_ok=True)
-        (output_dir / "problem_statement.md").write_text(state["problem_statement"])
-        (output_dir / "solution.cpp").write_text(state["solution_code"])
-        (output_dir / "bruteforce.cpp").write_text(state["bruteforce_code"])
-        (output_dir / "test_generator.cpp").write_text(state["test_generator_code"])
-        print(f"Files saved to: {output_dir}")
+    problem_name = _sanitize_filename(state["problem_statement"].split('\n')[0])
+    output_dir = Path("solved_problems") / f"{problem_name}_{verdict}"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    print(f"Saving all generated files to: {output_dir}")
+
+    if state.get("problem_statement"): (output_dir / "problem_statement.md").write_text(state["problem_statement"])
+    if state.get("solution_code"): (output_dir / "solution.cpp").write_text(state["solution_code"])
+    if state.get("bruteforce_code"): (output_dir / "bruteforce.cpp").write_text(state["bruteforce_code"])
+    if state.get("test_generator_code"): (output_dir / "test_generator.cpp").write_text(state["test_generator_code"])
+
+    if test_cases_dir_path and Path(test_cases_dir_path).exists():
+        test_case_dest = output_dir / "testcases"
+        if test_case_dest.exists(): shutil.rmtree(test_case_dest)
+        shutil.copytree(test_cases_dir_path, test_case_dest)
+        print(f"Saved test cases to: {test_case_dest}")
+        
+        shutil.rmtree(test_cases_dir_path)
+        print(f"Removed temporary test directory: {test_cases_dir_path}")
         
     return {"final_verdict": verdict}
