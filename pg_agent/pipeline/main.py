@@ -1,4 +1,4 @@
-from graph_builder import build_graph
+from .graph_builder import build_graph
 
 def main():
     state = {

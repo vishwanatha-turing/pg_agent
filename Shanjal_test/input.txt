@@ -1,0 +1,17 @@
+Winter is coming! During the contest, your job is to place heaters to warm all the houses.
+Every house can be warmed, as long as the house is within the heater's warm radius range.
+
+You are given the positions of houses and heaters on a horizontal line.
+Return the minimum radius required for the heaters so that every house is covered.
+
+Input:
+- Two arrays `houses` and `heaters`, both containing unique positive integers
+- 1 <= houses.length, heaters.length <= 3 * 10^4
+- 1 <= houses[i], heaters[i] <= 10^9
+
+Output:
+- Integer representing the minimum radius R
+
+Example:
+Input: houses = [1,2,3], heaters = [2]
+Output: 1
