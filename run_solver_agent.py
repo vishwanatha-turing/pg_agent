@@ -1,13 +1,13 @@
 import os
 import sys
+import uuid # Import the uuid library
 from dotenv import load_dotenv
 from pg_agent.auto_solver_agent.graph import auto_solver_graph
 from pg_agent.auto_solver_agent.schemas import SolverState
 
 load_dotenv()
 
-api_key = os.getenv("ANTHROPIC_API_KEY")
-if not api_key:
+if not os.getenv("ANTHROPIC_API_KEY"):
     print("FATAL ERROR: ANTHROPIC_API_KEY not found in .env file or environment.")
     sys.exit(1)
 
@@ -27,15 +27,19 @@ Print the two indices (0-based) separated by a space.
 def main():
     """Main function to run the auto-solver agent."""
     
+    # Generate a unique ID for this run
+    run_id = f"run_{uuid.uuid4().hex[:8]}"
+    print(f"Starting a new run with ID: {run_id}")
+    
     initial_state: SolverState = {
         "problem_statement": PROBLEM_STATEMENT.strip(),
         "num_test_generations": 3,
         "max_iterations": 5,
-        "api_key": api_key,
+        "run_id": run_id, # <-- RE-ADDED: Pass the unique ID into the state
         "bruteforce_code": None,
         "test_generator_code": None,
         "solution_code": None,
-        "test_cases_dir_path": None, # <-- ADD THIS LINE
+        "test_cases_dir_path": None,
         "test_results": None,
         "iteration_count": 0,
         "final_verdict": "PENDING",
