@@ -1,0 +1,20 @@
+{
+    "title": "Sample Problem",
+    "original": "",
+    "difficulty": "Hard",
+    "tags": [
+        "DS/Tree",
+        "DS/BinaryIndexedTree",
+        "DS/IntervalTree",
+        "DS/SegmentTree",
+        "Algo/CoordinateCompression",
+        "Algo/IntervalOperations",
+        "Math/AffineTransformations"
+    ],
+    "time": 5,
+    "space": 512,
+    "problem_statement": "problem_statement.md",
+    "standard_program": ["standard.cpp"],
+    "explanation": "solution.md",
+    "test_case_generator": "test_generator.cpp"
+}
