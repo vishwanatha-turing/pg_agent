@@ -4,91 +4,59 @@
 set -e
 
 MODE=$1
-GENERATION_ID=$2
 
 if [ "$MODE" = "generate" ]; then
-    # --- GENERATION MODE ---
+    GENERATION_ID=$2
     echo "--- Mode: GENERATE (Batch #${GENERATION_ID}) ---"
     
     echo "Compiling testcaseGenerator.cpp..."
     g++ -std=c++14 -O2 -o testcaseGenerator testcaseGenerator.cpp
     
-    # Create the generation-specific directory directly in the current path.
-    # The current path IS the shared volume.
     OUTPUT_DIR="generation${GENERATION_ID}"
     mkdir -p "$OUTPUT_DIR"
     
-    # Change directory to write the .in files.
     cd "$OUTPUT_DIR"
     echo "Running testcaseGenerator..."
-    ../testcaseGenerator # The executable is one level up.
+    ../testcaseGenerator
     
     echo "Test cases generated in ${OUTPUT_DIR}"
 
-elif [ "$MODE" = "execute" ]; then
-    # --- EXECUTION MODE ---
-    echo "--- Mode: EXECUTE ---"
+elif [ "$MODE" = "execute_suite" ]; then
+    TIME_LIMIT=$2
+    SOLUTION_FILE=$3 # e.g., "bruteforce.cpp"
+    EXECUTABLE_NAME=$4 # e.g., "bruteforce_solution"
+
+    echo "--- Mode: EXECUTE SUITE (Time Limit: ${TIME_LIMIT}s) ---"
     
-    echo "Compiling solution files..."
-    g++ -std=c++14 -O2 -o bruteforce bruteforce.cpp
-    g++ -std=c++14 -O2 -o suspectedSolution suspectedSolution.cpp
+    echo "Compiling ${SOLUTION_FILE}..."
+    g++ -std=c++14 -O2 -o "${EXECUTABLE_NAME}" "${SOLUTION_FILE}"
     
-    # Check if any 'generation*' directories exist in the current path.
-    if ! ls -d generation* > /dev/null 2>&1; then
-        echo "Error: No 'generation*' directories found to execute against."
-        exit 1
+    if ! ls -d *.in > /dev/null 2>&1; then
+        echo "Warning: No .in files found in this directory to execute against."
+        exit 0
     fi
     
-    failed_count=0
-    passed_count=0
-    
-    # Loop through each generation directory.
-    for gen_dir in generation*; do
-        echo "--- Running against batch: $(basename "$gen_dir") ---"
+    for infile in *.in; do
+        casenum=$(basename "$infile" .in)
+        outfile="${casenum}.out"
         
-        mkdir -p "${gen_dir}/outputs/bruteforce"
-        for infile in "${gen_dir}"/*.in; do
-            casenum=$(basename "$infile" .in)
-            ./bruteforce < "$infile" > "${gen_dir}/outputs/bruteforce/${casenum}.out"
-        done
-
-        mkdir -p "${gen_dir}/outputs/suspected"
-        for infile in "${gen_dir}"/*.in; do
-            casenum=$(basename "$infile" .in)
-            ./suspectedSolution < "$infile" > "${gen_dir}/outputs/suspected/${casenum}.out"
-
-            if diff -q "${gen_dir}/outputs/bruteforce/${casenum}.out" "${gen_dir}/outputs/suspected/${casenum}.out" > /dev/null; then
-                passed_count=$((passed_count + 1))
+        echo "Running ${EXECUTABLE_NAME} on ${infile}..."
+        if timeout "$TIME_LIMIT" ./"${EXECUTABLE_NAME}" < "$infile" > "$outfile"; then
+            echo "${infile}: SUCCESS"
+        else
+            if [ $? -eq 124 ]; then
+                echo "${infile}: TIMEOUT"
+                # Create an output file indicating timeout
+                echo "TIMEOUT" > "$outfile"
             else
-                failed_count=$((failed_count + 1))
-                echo "Test Case #${casenum} in $(basename "$gen_dir"): FAILED"
-                echo "--- FAILURE DETAILS ---"
-                echo "Input:"
-                cat "$infile"
-                echo
-                echo "Expected Output:"
-                cat "${gen_dir}/outputs/bruteforce/${casenum}.out"
-                echo
-                echo "Actual Output:"
-                cat "${gen_dir}/outputs/suspected/${casenum}.out"
-                echo "-----------------------"
-                
-                echo "--- Execution Finished ---"
-                echo "PASSED: $passed_count"
-                echo "FAILED: $failed_count"
-                exit 1
+                echo "${infile}: RUNTIME_ERROR"
+                echo "RUNTIME_ERROR" > "$outfile"
             fi
-        done
-        echo "Batch $(basename "$gen_dir") PASSED."
+        fi
     done
-
-    echo "--- Execution Finished ---"
-    echo "All batches PASSED."
-    echo "PASSED: $passed_count"
-    echo "FAILED: $failed_count"
     exit 0
 
 else
-    echo "Error: Invalid mode specified. Use 'generate' or 'execute'."
+    echo "Error: Invalid mode specified. Use 'generate' or 'execute_suite'."
     exit 1
 fi

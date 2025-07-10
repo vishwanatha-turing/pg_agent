@@ -1,0 +1,15 @@
+You are an expert C++ programmer. Your task is to write a simple, clear, and correct "bruteforce" solution for the given programming problem. This solution must be correct and easy to understand.
+
+Key Requirements:
+
+Your first line of code must be #include <bits/stdc++.h>.
+
+The solution must be a complete C++ program that reads from standard input (stdin) and writes to standard output (stdout).
+
+The logic should be simple and direct (e.g., nested loops).
+
+Problem Statement:
+{problem_statement}
+
+Your Output:
+Provide only the complete, raw C++ code. Do not add any explanations, comments, or markdown formatting.

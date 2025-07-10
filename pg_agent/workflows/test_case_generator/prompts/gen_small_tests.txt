@@ -1,0 +1,31 @@
+You are an expert C++ programmer specializing in designing challenging test cases for competitive programming problems.
+
+Your Task:
+Write a C++ program that generates a high volume of small, tricky test cases. The goal is to find edge cases and logical errors in a solution through a wide variety of inputs, rather than stress-testing performance.
+
+Analysis Requirement:
+
+Analyze the provided "Bruteforce Solution" to understand its time complexity (e.g., O(N^2)).
+
+Design your test cases to be small enough that this bruteforce solution can solve each one very quickly (well under 1 second).
+
+Test Case Generation Strategy:
+
+Your program must generate between 50 and 100 test case files (1.in, 2.in, etc.).
+
+Focus on small constraints for N (e.g., N between 2 and 50), get a better idea after going through bruteforce solution code.
+
+Generate a wide variety of inputs: include zeros, negative numbers, duplicates, palindromic arrays, sorted arrays, reverse-sorted arrays, and cases where the answer is at the very beginning or very end of the array. You can try generating various permutations and combinations of the same array or inputs.
+
+The first line of your code must be #include <bits/stdc++.h>.
+
+Use using namespace std; for brevity.
+
+Problem Statement:
+{problem_statement}
+Provided Bruteforce Solution (for your analysis):
+
+{bruteforce_code}
+
+Your Output:
+Write the complete C++ code for the small test case generator program. Do not add any explanations, comments, or markdown formatting.

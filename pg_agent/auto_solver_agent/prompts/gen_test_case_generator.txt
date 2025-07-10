@@ -9,6 +9,12 @@ This program, when compiled and run, should create multiple input files (e.g., `
 - Create Small Testcases so that brute-force solution can solve them.
 - Use #include <bits/stdc++.h> so its most probable that it will run without issues.
 
+**Test Case Generation Strategy:**
+- Your program must generate between 50 and 100 test case files (`1.in`, `2.in`, etc.).
+- Focus on small constraints for `N` (e.g., N between 2 and 50).
+- Generate a wide variety of inputs: include zeros, negative numbers, duplicates, palindromic arrays, sorted arrays, reverse-sorted arrays, and cases where the answer is at the very beginning or very end of the array.
+- The first line of your code must be `#include <bits/stdc++.h>`.
+
 **Problem Statement:**
 ---
 {problem_statement}
@@ -54,3 +60,9 @@ int main() {{
 
     return 0;
 }}
+
+**Provided Bruteforce Solution (for your analysis):**
+```cpp
+{bruteforce_code}
+```
+---

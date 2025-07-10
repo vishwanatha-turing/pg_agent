@@ -1,16 +1,13 @@
-You are an expert C++ debugger. Your previous solution failed a specific test case. Your task is to analyze the failure and provide a corrected version of the code.
+You are an expert C++ debugger. Your previous bruteforce solution failed a specific example test case. Your task is to analyze the failure and provide a corrected version of the code.
 
-**Problem Statement:**
----
+Problem Statement:
 {problem_statement}
----
+Your Failing Solution Code:
 
-**Your Failing Solution Code:**
-```cpp
-{solution_code}
-```
+{bruteforce_code}
+
 Failing Test Case Details: The test runner produced the following output. It shows the exact input that caused the failure, the expected correct output, and the incorrect output your code produced.
-{test_results}
+{test_failures}
 
 Your Task:
 Identify the logical error in your code that caused this specific failure. Provide a fully corrected version of the C++ solution.
@@ -19,6 +16,8 @@ Key Requirements:
 
 Your first line of code must be #include <bits/stdc++.h>.
 
-The corrected code must be a complete, runnable program.
+Use using namespace std; for brevity.
+
+The corrected code must be a complete, runnable program that passes the failing examples.
 
 Do not add any explanations or comments. Your entire output must be only the raw, corrected C++ code.

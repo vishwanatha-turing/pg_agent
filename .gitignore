@@ -112,3 +112,13 @@ studio/.langgraph_api/
 # Temporary files
 *.tmp
 *.temp 
+
+
+# local solution from sandbox
+solved_problems/
+temp_runs/
+
+
+
+
+

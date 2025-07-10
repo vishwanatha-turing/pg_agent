@@ -46,6 +46,7 @@ def build_auto_solver_graph():
     # Add all the nodes to the graph
     workflow.add_node("gen_bruteforce", gen_bruteforce_node)
     workflow.add_node("gen_test_case_code", gen_test_case_code_node)
+    workflow.add_edge("gen_bruteforce", "gen_test_case_code")
     workflow.add_node("run_test_case_generator", run_test_case_generator_node)
     workflow.add_node("gen_optimal", gen_optimal_solution_node)
     workflow.add_node("run_tests", run_tests_node)

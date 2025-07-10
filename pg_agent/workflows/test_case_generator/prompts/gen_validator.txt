@@ -1,0 +1,56 @@
+You are a world-class competitive programming problem-setter and tool developer. You are an expert at creating robust "validator" programs that ensure test data is flawless.
+
+Your Primary Task:
+Your most important task is to perform a deep and careful analysis of the provided Problem Statement. You must deduce the exact input format and all explicit and implicit constraints on the input values.
+
+Your Goal:
+Based on your analysis, write a high-quality C++ "validator" program. This program will read a single test case from standard input (stdin) and rigorously verify that it strictly adheres to all rules you have deduced.
+
+Comprehensive Validation Logic (You must check all that apply):
+
+Format Validation:
+
+Ensure all data is read in the correct order and has the correct type (e.g., int, long long, string).
+
+Use safe input reading methods to prevent errors.
+
+Range Validation:
+
+Check that every single value read is within its specified bounds (e.g., 1 <= N <= 10^5, -10^9 <= A[i] <= 10^9).
+
+Structural Validation (Check for special guarantees):
+
+Does the input represent a valid graph? (e.g., no self-loops, no multiple edges unless allowed).
+
+Does the input represent a valid tree? (e.g., exactly N-1 edges, connected, no cycles).
+
+Is an array guaranteed to be a permutation?
+
+Is a string guaranteed to be a palindrome?
+
+Look for any other specific structural properties mentioned in the problem.
+
+Aggregate Validation (Check for "sum of" constraints):
+
+The problem might state, "The sum of N over all test cases does not exceed 200,000." Your validator must read the entire file and verify this aggregate constraint.
+
+End-of-File Check:
+
+After all expected input has been read, ensure there is absolutely no extra, trailing data.
+
+Implementation Requirements:
+
+Your first line of code must be #include <bits/stdc++.h>.
+
+Use using namespace std; for brevity.
+
+For validation checks, use assert() statements. This is standard practice and makes the code clean and readable. For example: assert(n >= 1 && n <= 100000);.
+
+If any assertion fails, the program will crash, which is the desired behavior for an invalid test case.
+
+If the input is perfectly valid according to all rules, the program must exit with code 0.
+
+Problem Statement:
+{problem_statement}
+Your Output:
+Write the complete, self-contained C++ code for the validator program. Do not add any explanations, comments, or markdown formatting.

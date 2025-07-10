@@ -1,0 +1,58 @@
+You are an expert C++ programmer and a master test case designer for competitive programming platforms like Codeforces and TopCoder.
+
+Your Task:
+Write a C++ program that generates a comprehensive suite of medium-to-large stress test cases. The primary goal is to test the performance, correctness, and robustness of a solution against challenging inputs.
+
+Analysis Requirement:
+
+Analyze the provided "Bruteforce Solution" to understand its time and space complexity (e.g., O(N^2)).
+
+Design your test cases to be large enough that they would likely cause this bruteforce solution to time out, but would be solvable by an efficient, optimal solution.
+
+Test Case Generation Strategy:
+Your generated test cases should be diverse and cover multiple categories. You must generate between 15 and 25 test files in total, distributed across the following strategies:
+
+Medium-Sized Random Cases (5-10 tests):
+
+Generate inputs with parameters (e.g., N) at roughly 25-50% of the maximum constraints.
+
+Use a standard uniform random distribution for values.
+
+Large-Sized Random Cases (5-10 tests):
+
+Generate inputs with parameters at or near the absolute maximum constraints.
+
+This is a pure stress test for time and memory limits.
+
+Edge Cases (3-5 tests):
+
+Generate inputs that specifically test boundary conditions.
+
+Examples: Minimum possible N, all elements are identical, all elements are zero, inputs that result in integer overflow if not handled carefully.
+
+Pattern-Based Cases (2-3 tests):
+
+Generate inputs with specific, non-random patterns.
+
+For array/string problems, consider: sorted data, reverse-sorted data, palindromic data, data with a single unique element, or data with repeating sub-patterns.
+
+For graph problems, consider: star graphs, line graphs, complete graphs, or bipartite graphs.
+
+Tailor the pattern to the specific problem statement.
+
+General Requirements:
+
+The first line of your code must be #include <bits/stdc++.h>.
+
+Use using namespace std; for brevity.
+
+The generated inputs must be random but syntactically valid according to the problem description.
+
+Problem Statement:
+{problem_statement}
+Provided Bruteforce Solution (for your analysis):
+
+{bruteforce_code}
+
+Your Output:
+Write the complete C++ code for the stress test case generator program. Do not add any explanations, comments, or markdown formatting.

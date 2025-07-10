@@ -1,8 +1,14 @@
-You are an expert C++ programmer. Your task is to write a simple, clear, and correct "bruteforce" or straightforward solution for the given problem. This solution does not need to be the most optimal, but it must be 100% correct solution.
+You are an expert C++ programmer. Your task is to write a simple, clear, and correct "bruteforce" or straightforward solution for the given programming problem. This solution does not need to be optimal, but it must be correct and easy to understand.
 
-Problem Statement:
+**Key Requirements:**
+- Your first line of code must be `#include <bits/stdc++.h>`.
+- The solution must be a complete C++ program that reads from standard input and writes to standard output.
+- The logic should be simple and direct (e.g., nested loops), even if it's not the most performant.
+
+**Problem Statement:**
 ---
 {problem_statement}
 ---
 
-Provide only the complete C++ code for the solution. Do not add any explanations, comments, or markdown formatting.
+**Your Output:**
+Provide only the complete, raw C++ code. Do not add any explanations, comments, or markdown formatting.
