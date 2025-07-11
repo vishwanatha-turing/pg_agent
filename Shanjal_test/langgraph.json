@@ -1,7 +1,8 @@
 {
   "dockerfile_lines": [],
   "graphs": {
-    "problem_gen": "problem_gen:app"
+    "problem_gen": "problem_gen:app",
+	"problem_genenerator": "prompt_generator:app"
   },
   "env": "./.env",
   "python_version": "3.11",

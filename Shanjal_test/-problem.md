@@ -1,62 +1,75 @@
-# Problem Title: The Enigma of Dynamic Illumination
+```markdown
+# Problem: Treasure Hunt
 
-### Problem Statement
+## Problem Description
 
-You are appointed as the chief architect of a futuristic city. The city is built on a grid with \( n \times n \) intersections. Each intersection is equipped with a dynamic light module that can emit light in one of three colors: Red, Green, or Blue. The city council has imposed the following illumination policy:
+In the mystical land of Algoria, there is a hidden treasure buried somewhere along a straight path of length `N`. The treasure is buried at some position on this path, and your task is to find its exact location. However, there's a twist: you are not allowed to directly check any specific location for the treasure. Instead, you can query the path by asking an oracle about a segment of the path.
 
-1. **Illumination Rule**: Every row and column must have exactly one intersection illuminated with Red and one with Green. The remaining intersections in each row and column must be Blue.
-2. **Visibility Constraint**: No two Red lights can be in the same diagonal (both primary or secondary) of the grid. Similarly, no two Green lights can be in the same diagonal.
-3. **Harmony Requirement**: For any chosen \( k \times k \) subgrid, the number of Red lights must be equal to the number of Green lights, modulo 2.
+The oracle will respond to your query by telling you whether the treasure is within the specified segment or not. The challenge is to determine the exact location of the treasure by minimizing the number of queries to the oracle.
 
-Given \( n \), your task is to configure the grid in a way that satisfies all the above conditions.
+## Input Format
 
-### Input
+The interaction with the oracle is as follows:
 
-- A single integer \( n \) (1 ≤ \( n \) ≤ 100,000), the size of the grid.
+1. You will first be given an integer `N` (2 ≤ N ≤ 10^5), representing the length of the path.
+2. You are allowed to make queries to the oracle in the format `? L R`, where `1 ≤ L ≤ R ≤ N`.
+3. The oracle will respond with either "YES" if the treasure is within the segment `[L, R]`, or "NO" if it is not.
+4. Once you are certain of the treasure's location, output the position `P` (1 ≤ P ≤ N) with the statement `! P`.
 
-### Output
+## Output Format
 
-- Output the configuration of the grid as \( n \) lines, each containing \( n \) characters ('R', 'G', or 'B'), representing the color of the light at each intersection.
-- Multiple valid configurations are possible. Any correct configuration will be accepted.
+- For each query `? L R`, the oracle will respond with "YES" or "NO".
+- When you determine the position `P` of the treasure, output `! P`.
 
-### Constraints and Edge Cases
+## Constraints
 
-- Adversarial inputs are designed to break naive O(n^2) approaches.
-- Consider precision errors in logic, especially with large \( n \).
-- Ensure that your solution is efficient enough to handle the upper bounds of \( n \) within the time limit.
+- You need to find the position of the treasure with as few queries as possible.
+- The position of the treasure is fixed and does not change between queries.
 
-### Example
+## Example
 
-**Input**
-
-```
-5
-```
-
-**Output**
+Consider the following interaction where `N = 10`:
 
 ```
-RBBGB
-GBRBB
-BRGBB
-BBGBR
-BBGRB
+Input:
+10
+
+Query 1:
+? 1 5
+Output:
+NO
+
+Query 2:
+? 6 10
+Output:
+YES
+
+Query 3:
+? 6 8
+Output:
+NO
+
+Query 4:
+? 9 10
+Output:
+YES
+
+Query 5:
+? 9 9
+Output:
+YES
+
+Final Output:
+! 9
 ```
 
-### Explanation
+In this example, the treasure is located at position `9`.
 
-- Each row and column have exactly one 'R' and one 'G'.
-- No two 'R's or 'G's are on the same diagonal.
-- The \( 2 \times 2 \) subgrid rule holds for the chosen configuration.
-- Multiple outputs are possible, and this is just one valid configuration.
+## Notes
 
-### Evaluation Criteria
+- Be mindful of the number of queries you make. Efficiently narrowing down the possible locations of the treasure is crucial.
+- You can implement a segment tree or a binary search strategy to minimize the number of queries.
+- Remember to flush output after each query to ensure your program interacts correctly with the oracle.
+```
 
-- Binary scoring: Solutions are marked correct or incorrect.
-- Hidden edge cases will test the robustness of the solution.
-- Submissions using naive methods or failing hidden constraints will not pass.
-
-### Notes
-
-- The problem is suitable for advanced competitions, with emphasis on combinatorial insight and efficient computation strategies.
-- The challenge lies in balancing the constraints and efficiently computing a valid configuration for large grids.
+This problem involves interactive queries and utilizes segment trees or binary search techniques, making it suitable for a medium-hard difficulty level in competitive programming.

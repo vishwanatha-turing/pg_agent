@@ -11,7 +11,7 @@ import os
 load_dotenv()
 
 # Access the key (optional check)
-assert os.getenv("OPENAI_API_KEY"), "❌ OPENAI_API_KEY not found in .env"
+assert os.getenv("OPENAI_API_KEY"), " OPENAI_API_KEY not found in .env"
 
 # Step 1: Load problem from file
 def load_problem_node(state: dict) -> dict:
@@ -20,7 +20,7 @@ def load_problem_node(state: dict) -> dict:
         with open("input.txt", "r", encoding="utf-8") as f:
             problem = f.read().strip()
     except FileNotFoundError:
-        raise ValueError("❌ input.txt not found")
+        raise ValueError("input.txt not found")
 
     new_state = dict(state)
     new_state["problem_statement"] = problem
