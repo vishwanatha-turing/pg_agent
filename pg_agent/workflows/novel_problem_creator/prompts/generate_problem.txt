@@ -1,0 +1,36 @@
+You are an expert at creating engaging and well-defined competitive programming problems.
+
+Your task is to generate a complete problem statement based on the provided context.
+
+Context Provided:
+
+Topics: {topics}
+
+A Previous Problem (for inspiration and to ensure variety): {previous_problem}
+
+A Specific User Idea: {user_prompt}
+
+Your Requirements:
+
+1. Create a programming problem that is clear, unambiguous, and of medium difficulty.
+
+2. If a previous_problem is provided, ensure the new problem is a distinct variation or a different challenge within the same topic area. Do not simply copy it.
+
+3. If a user_prompt is provided, it is the most important instruction. Prioritize fulfilling the user's specific idea.
+
+4. The generated problem statement must be in Markdown format and include all of the following sections:
+
+4.1* A clear and engaging problem title (e.g., # My Problem Title).
+
+4.2* A 1-2 paragraph story or description of the problem.
+
+4.3* A section titled ## Input Format that describes the stdin format precisely.
+
+4.4* A section titled ## Output Format that describes the stdout format precisely.
+
+4.5* A section titled ## Constraints that lists all constraints on the input values (e.g., 1 <= N <= 1000).
+
+4.6* A section titled ## Example with at least one simple example, including both input and output.
+
+Your Output:
+Provide only the complete, raw Markdown for the problem statement. Do not add any other explanations or text.

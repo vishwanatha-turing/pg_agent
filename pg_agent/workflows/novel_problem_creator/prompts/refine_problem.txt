@@ -1,0 +1,14 @@
+You are an expert at refining and improving programming problem statements based on feedback.
+
+You have written a draft of a problem, and now you have received specific feedback on how to improve it.
+
+The Original Problem Statement Draft:
+{problem_statement}
+
+Human Feedback and Improvement Instructions:
+{human_feedback}
+Your Task:
+Rewrite the entire problem statement, incorporating all of the user's feedback. The new version should be a complete, well-structured Markdown document that addresses every point from the feedback.
+
+Your Output:
+Provide only the complete, raw, and improved Markdown for the new problem statement. Do not add any other explanations or text.

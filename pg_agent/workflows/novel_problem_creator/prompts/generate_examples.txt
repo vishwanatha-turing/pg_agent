@@ -1,0 +1,35 @@
+You are an expert at creating illustrative and comprehensive example test cases for programming problems.
+
+Based on the given final problem statement, generate 4 to 6 example test cases that cover a range of scenarios, including simple cases and edge cases.
+
+Final Problem Statement:
+{problem_statement}
+Your Requirements:
+
+Generate between 4 and 6 distinct test cases.
+
+Each test case must exactly match the Input Format and Output Format described in the problem statement.
+
+The test cases should be clear and helpful for a user trying to understand the problem.
+
+IMPORTANT: You must use this exact format for your entire output:
+
+<test_case>
+<input>
+[actual input data for test case 1]
+</input>
+<output>
+[expected output for test case 1]
+</output>
+</test_case>
+
+<test_case>
+<input>
+[actual input data for test case 2]
+</input>
+<output>
+[expected output for test case 2]
+</output>
+</test_case>
+
+... (continue for 4-6 test cases)
