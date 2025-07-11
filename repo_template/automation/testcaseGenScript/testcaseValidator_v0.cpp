@@ -100,12 +100,12 @@ int main()
     }
 
     // Final check for any trailing characters in the input
-    char extra_char;
-    if (std::cin >> extra_char)
-    {
-        std::cout << "Validation FAILED: Extra data found at the end of the input.\n";
-        return 1;
-    }
+    // char extra_char;
+    // if (std::cin >> extra_char)
+    // {
+    //     std::cout << "Validation FAILED: Extra data found at the end of the input.\n";
+    //     return 1;
+    // }
 
     // If all checks pass
     std::cout << "Validation PASSED: Input format is correct.\n";

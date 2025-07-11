@@ -4,7 +4,8 @@ import shutil
 from pathlib import Path
 import tempfile
 from .schemas import TestValidatorState
-from ...pipeline.sandbox.sandbox_utils import run_generator_script, run_validator_script, run_solution_on_test_case
+# Import the efficient suite runners
+from ...pipeline.sandbox.sandbox_utils import run_generator_script, run_validation_suite, run_test_suite
 
 def load_scripts_node(state: TestValidatorState) -> dict:
     """Loads the latest versions of all required C++ scripts from the automation directory."""
@@ -39,7 +40,7 @@ def load_scripts_node(state: TestValidatorState) -> dict:
         "stress_test_gen_path": stress_test_gen_path,
         "validator_path": validator_path,
         "run_dir_path": str(run_dir),
-        "invalid_tests": [] # Initialize the list of invalid tests
+        "invalid_tests": []
     }
 
 def run_generators_node(state: TestValidatorState) -> dict:
@@ -61,67 +62,83 @@ def run_generators_node(state: TestValidatorState) -> dict:
     return {}
 
 def validate_inputs_node(state: TestValidatorState) -> dict:
-    """Runs the validator script against all generated and example .in files."""
-    print("--- Validating all generated input files ---")
+    """Runs the validator script against all generated and example .in files efficiently."""
+    print("--- Validating all generated input files (Efficiently) ---")
     run_dir = Path(state['run_dir_path'])
     problem_dir = Path(state['problem_dir_path'])
     
-    valid_small_tests = []
-    valid_large_tests = []
-    invalid_tests = []
-    
-    # Combine user examples with generated files for validation
     all_inputs = list((run_dir / "small").glob("*.in")) + \
                  list((run_dir / "large").glob("*.in")) + \
                  list((problem_dir / "test_cases").glob("example_*.in"))
 
-    for in_file in all_inputs:
-        print(f"  Validating {in_file.name}...")
-        is_valid, error_msg = run_validator_script(state['validator_path'], in_file)
-        if is_valid:
-            if "small" in str(in_file.parent):
-                valid_small_tests.append(str(in_file))
-            elif "large" in str(in_file.parent):
-                valid_large_tests.append(str(in_file))
-            elif "example" in in_file.name:
-                valid_small_tests.append(str(in_file))
-        else:
-            print(f"  WARNING: Invalid test case file '{in_file.name}'. Discarding. Reason: {error_msg}")
-            invalid_tests.append({"file": in_file.name, "reason": f"Invalid Format: {error_msg}"})
-            # We no longer delete the file, just log it as invalid.
+    if not all_inputs:
+        print("Warning: No input files found to validate.")
+        return {"valid_small_tests": [], "valid_large_tests": [], "invalid_tests": []}
 
-    print(f"Validation complete. Found {len(valid_small_tests)} valid small tests, {len(valid_large_tests)} valid large tests, and {len(invalid_tests)} invalid files.")
-    return {"valid_small_tests": valid_small_tests, "valid_large_tests": valid_large_tests, "invalid_tests": invalid_tests}
+    valid_paths, invalid_dicts = run_validation_suite(state['validator_path'], all_inputs)
 
+    valid_small_tests = []
+    valid_large_tests = []
+    for p in valid_paths:
+        if "small" in str(p.parent) or "example" in p.name:
+            valid_small_tests.append(str(p))
+        elif "large" in str(p.parent):
+            valid_large_tests.append(str(p))
+            
+    for invalid in invalid_dicts:
+        print(f"  WARNING: Invalid test case file '{invalid['file']}'. Reason: {invalid['reason']}")
+
+    print(f"Validation complete. Found {len(valid_small_tests)} valid small tests, {len(valid_large_tests)} valid large tests, and {len(invalid_dicts)} invalid files.")
+    return {"valid_small_tests": valid_small_tests, "valid_large_tests": valid_large_tests, "invalid_tests": invalid_dicts}
+
+# --- CORRECTED: This node is now much more efficient ---
 def run_bruteforce_on_small_tests_node(state: TestValidatorState) -> dict:
-    """Runs the bruteforce solution on all valid small tests to generate .out files."""
-    print("--- Generating outputs for small test cases using bruteforce ---")
+    """Runs the bruteforce solution on all valid small tests efficiently in a single container."""
+    print("--- Generating outputs for small test cases using bruteforce (Efficiently) ---")
     
-    final_valid_small_tests = []
-    # Get the current list of invalid tests to append to it
     invalid_tests = state.get("invalid_tests", [])
+    valid_small_test_paths = [Path(p) for p in state.get('valid_small_tests', [])]
 
-    for in_file_path_str in state['valid_small_tests']:
-        in_file = Path(in_file_path_str)
-        print(f"  Running bruteforce on {in_file.name}...")
+    if not valid_small_test_paths:
+        print("No valid small tests to run.")
+        return {"valid_small_tests": [], "invalid_tests": invalid_tests}
+
+    # Create a single temporary directory to hold all valid small tests
+    with tempfile.TemporaryDirectory() as temp_small_test_dir_str:
+        temp_small_test_dir = Path(temp_small_test_dir_str)
         
-        timed_out, output = run_solution_on_test_case(
+        # Copy all valid small test .in files to this single directory
+        for in_file_path in valid_small_test_paths:
+            shutil.copy(in_file_path, temp_small_test_dir)
+            
+        # Run the entire suite in one go
+        run_test_suite(
             solution_path=state['bruteforce_path'],
-            input_file=in_file,
+            test_cases_dir=temp_small_test_dir,
             time_limit=state['bruteforce_time_limit']
         )
         
-        if timed_out:
-            print(f"  WARNING: Bruteforce timed out on '{in_file.name}'. Discarding this test case.")
-            invalid_tests.append({"file": in_file.name, "reason": "Bruteforce Timed Out"})
-        else:
-            # Create the corresponding .out file
-            out_file = in_file.with_suffix(".out")
-            out_file.write_text(output, encoding="utf-8")
-            final_valid_small_tests.append(in_file_path_str)
+        # Now, process the results from the temp directory
+        final_valid_small_tests = []
+        for in_file_path in valid_small_test_paths:
+            # The corresponding .out file was created in our temp directory
+            out_file_in_temp = temp_small_test_dir / in_file_path.name.replace(".in", ".out")
             
+            if out_file_in_temp.exists():
+                content = out_file_in_temp.read_text(encoding="utf-8").strip()
+                if content == "TIMEOUT":
+                    print(f"  WARNING: Bruteforce timed out on '{in_file_path.name}'. Discarding.")
+                    invalid_tests.append({"file": in_file_path.name, "reason": "Bruteforce Timed Out"})
+                else:
+                    # Copy the generated .out file back to the original location
+                    shutil.copy(out_file_in_temp, in_file_path.with_suffix(".out"))
+                    final_valid_small_tests.append(str(in_file_path))
+            else:
+                # This case handles runtime errors where an out file might not be created
+                print(f"  WARNING: No output file for '{in_file_path.name}'. Assuming runtime error.")
+                invalid_tests.append({"file": in_file_path.name, "reason": "Bruteforce Runtime Error"})
+
     print("Finished generating all outputs for valid small tests.")
-    # Update the state with the final lists of valid and invalid tests
     return {"valid_small_tests": final_valid_small_tests, "invalid_tests": invalid_tests}
 
 def save_results_node(state: TestValidatorState) -> dict:
@@ -131,33 +148,26 @@ def save_results_node(state: TestValidatorState) -> dict:
     automation_test_cases_dir = Path(state['problem_dir_path']) / "automation" / "testcases"
     automation_test_cases_dir.mkdir(parents=True, exist_ok=True)
     
-    # Create subdirectories for clarity
     (automation_test_cases_dir / "small").mkdir(exist_ok=True)
     (automation_test_cases_dir / "large").mkdir(exist_ok=True)
     (automation_test_cases_dir / "example").mkdir(exist_ok=True)
 
-    # Copy valid small tests and their generated outputs
     for test_path_str in state.get('valid_small_tests', []):
         test_path = Path(test_path_str)
+        dest_dir = automation_test_cases_dir / "small"
         if "example" in test_path.name:
             dest_dir = automation_test_cases_dir / "example"
-        else:
-            dest_dir = automation_test_cases_dir / "small"
-        
         if test_path.exists(): shutil.copy(test_path, dest_dir / test_path.name)
         out_path = test_path.with_suffix(".out")
         if out_path.exists(): shutil.copy(out_path, dest_dir / out_path.name)
 
-    # Copy valid large tests (only .in files)
     for test_path_str in state.get('valid_large_tests', []):
         test_path = Path(test_path_str)
         if test_path.exists(): shutil.copy(test_path, automation_test_cases_dir / "large" / test_path.name)
 
-    # Save the list of invalid tests for auditing
     invalid_log_path = automation_test_cases_dir / "invalid_testcases.json"
     invalid_log_path.write_text(json.dumps(state.get("invalid_tests", []), indent=2), encoding="utf-8")
             
-    # Clean up the temporary run directory
     if run_dir.exists():
         shutil.rmtree(run_dir)
         
