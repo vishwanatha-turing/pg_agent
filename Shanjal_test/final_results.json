@@ -1,0 +1,6722 @@
+[
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_1.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+133605669"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+10503098"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+222099953"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+16340084"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+669998121"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+621910678"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+699478696"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+848957248"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+192146349"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+318237123"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+399558282"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+43577291"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+337515271"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+912880234"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+945410337"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+753994076"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+325014022"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+63092020"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+41386942"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+598702262"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+365040172"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+640397009"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+191343080"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+822315111"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+224537377"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+494402727"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+178290591"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+873381228"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+780063666"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+813442982"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3628800"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+523095984"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+102"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+108"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_2.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+894633351"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+380834017"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+591064746"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+670602136"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+570068678"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+823982602"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+434867649"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+353165538"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+613514508"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+679026365"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+384127563"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+725708334"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+455564279"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+479765113"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+753787743"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+618208727"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+51990669"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+797391091"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+925347967"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+366338475"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+385836336"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+450404875"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+243307433"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+361484321"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+626157959"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+342073837"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+629960783"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+172121631"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+473821310"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+849513607"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+356447609"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3627120"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+357492522"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+101"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+96"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+116"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+3"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+18"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+18"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_3.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+133605669"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+10503098"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+222099953"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+16340084"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+669998121"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+621910678"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+699478696"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+848957248"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+192146349"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+318237123"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+399558282"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+43577291"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+337515271"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+912880234"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+945410337"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+753994076"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+325014022"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+63092020"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+41386942"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+598702262"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+365040172"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+640397009"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+191343080"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+822315111"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+224537377"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+494402727"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+178290591"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+873381228"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+780063666"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+813442982"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3628800"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+523095984"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+102"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+108"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_4.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+133605669"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+10503098"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+222099953"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+16340084"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+669998121"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+621910678"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+699478696"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+848957248"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+192146349"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+318237123"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+399558282"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+43577291"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+337515271"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+912880234"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+945410337"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+753994076"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+325014022"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+63092020"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+41386942"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+598702262"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+365040172"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+640397009"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+191343080"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+822315111"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+224537377"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+494402727"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+178290591"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+873381228"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+780063666"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+813442982"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3628800"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+523095984"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+102"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+108"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_5.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-878262433"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-953459868"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-499051475"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-972510312"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+456750825"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-254113637"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-639003788"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-612552455"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-0"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-503904671"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-515963583"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-267004383"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-237538098"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-687226597"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-59853208"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-355598490"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-769166404"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-7420295"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-688804793"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-664149455"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-640959813"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-875537577"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-155629512"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-574787548"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-98301283"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+10886400"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-444991258"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-240629234"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-311007922"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-992966680"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-596777184"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-673803903"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-615500787"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-804838099"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-122265788"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-297267849"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-36681019"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-13742962"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-605677854"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+29516765"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-237257337"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-153549880"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-653219247"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+1209600"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-961486048"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +0,0 @@\n-853566271"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+6"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+120"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+120"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+72"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+2"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+24"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+24"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_7.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_8.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+894633351"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+380834017"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+591064746"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+670602136"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+570068678"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+823982602"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+434867649"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+353165538"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+613514508"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+679026365"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+384127563"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+725708334"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+455564279"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+479765113"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+753787743"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+618208727"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+51990669"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+797391091"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+925347967"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+366338475"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+385836336"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+450404875"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+243307433"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+361484321"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+626157959"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+342073837"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+629960783"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+172121631"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+473821310"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+849513607"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+356447609"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3627120"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+357492522"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+101"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+96"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+116"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+3"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+18"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+18"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_9.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+133605669"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+10503098"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+222099953"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+16340084"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+669998121"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+621910678"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+699478696"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+848957248"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+192146349"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+318237123"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+399558282"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+43577291"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+337515271"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+912880234"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+945410337"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+753994076"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+325014022"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+63092020"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+41386942"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+598702262"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+365040172"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+640397009"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+191343080"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+822315111"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+224537377"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+494402727"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+178290591"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+873381228"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+780063666"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+813442982"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3628800"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+523095984"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+102"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+108"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_10.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+133605669"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+10503098"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+222099953"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+16340084"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+669998121"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+621910678"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+699478696"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+848957248"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+192146349"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+318237123"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+399558282"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+43577291"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+337515271"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+912880234"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+945410337"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+753994076"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+325014022"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+63092020"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+41386942"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+598702262"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+365040172"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+640397009"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+191343080"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+822315111"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+224537377"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+494402727"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+178290591"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+873381228"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+780063666"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+813442982"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3628800"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+523095984"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+102"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+108"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_11.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+894633351"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+380834017"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+591064746"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+670602136"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+570068678"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+823982602"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+434867649"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+353165538"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+613514508"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+679026365"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+384127563"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+725708334"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+455564279"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+479765113"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+753787743"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+618208727"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+51990669"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+797391091"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+925347967"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+366338475"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+385836336"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+450404875"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+243307433"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+361484321"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+626157959"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+342073837"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+629960783"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+172121631"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+473821310"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+849513607"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+356447609"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3627120"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+357492522"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+101"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+96"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+116"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+3"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+18"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+18"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_12.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+369398991"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+133605669"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+10503098"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+354551275"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+222099953"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+14530444"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+16340084"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+192146349"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+669998121"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+24"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+621910678"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+699478696"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+848957248"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+192146349"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+318237123"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+399558282"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+43577291"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+337515271"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+912880234"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+945410337"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+689278845"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+275417893"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+753994076"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+325014022"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+63092020"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+41386942"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+598702262"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+39916800"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+269199917"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+365040172"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+640397009"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+674190056"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+191343080"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+822315111"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+286129051"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+954784168"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+104379182"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+224537377"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+640855835"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+942573301"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+494402727"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+657629300"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+178290591"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+873381228"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+780063666"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+813442982"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+3628800"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+280940535"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+523095984"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+4"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+102"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+120"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+108"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+720"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+120"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+6"
+  },
+  {
+    "attempt": "run_13.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+120"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-878262433\n+256209807"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-953459868\n+19055940"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-499051475\n+561470939"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-972510312\n+231028393"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-715853358\n+4312"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-254113637\n+37414009"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-639003788\n+502185460"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-612552455\n+893622825"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+784410802"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-503904671\n+337291784"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+1"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-515963583\n+467514824"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267004383\n+244396077"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-474762828\n+55428576"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237538098\n+74054833"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-318050933\n+830302409"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-687226597\n+62031476"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-59853208\n+347989328"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-355598490\n+138367383"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-769166404\n+719396161"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-7420295\n+299558703"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-688804793\n+510323014"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-664149455\n+411097873"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-640959813\n+935056709"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-875537577\n+851477852"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-155629512\n+308459713"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-574787548\n+720949256"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-98301283\n+96741285"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+999999348"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-444991258\n+276210810"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-240629234\n+83346494"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-311007922\n+562430383"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-992966680\n+241543158"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-596777184\n+69234184"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-673803903\n+658858126"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-615500787\n+743494612"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-804838099\n+48202024"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-122265788\n+998365235"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-297267849\n+735885340"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-36681019\n+222205709"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13742962\n+160925837"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-267751351\n+513716670"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-605677854\n+880235597"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-928310890\n+196415"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-237257337\n+842471590"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-153549880\n+988118717"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-653219247\n+641547193"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+999999732"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-961486048\n+91487415"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-853566271\n+177419835"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-2\n+1000000004"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+6"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+5"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-64\n+999999985"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+7"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-24\n+14"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+1000000001"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-426\n+8"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+999999988"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+999999995"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-4\n+1"
+  },
+  {
+    "attempt": "run_14.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+9"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-13\n+17"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-19062796\n+20886576"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-1777862\n+1964832"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": false,
+    "error": "TIMEOUT"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-38\n+44"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+77"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-84\n+96"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+2"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+14"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-72\n+78"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-0\n+11"
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_15.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": false,
+    "diff": "--- expected\n+++ actual\n@@ -1 +1 @@\n-90\n+96"
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "1.in",
+    "output_file": "1.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "10.in",
+    "output_file": "10.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "11.in",
+    "output_file": "11.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "12.in",
+    "output_file": "12.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "13.in",
+    "output_file": "13.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "14.in",
+    "output_file": "14.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "15.in",
+    "output_file": "15.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "16.in",
+    "output_file": "16.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "17.in",
+    "output_file": "17.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "18.in",
+    "output_file": "18.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "19.in",
+    "output_file": "19.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "2.in",
+    "output_file": "2.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "20.in",
+    "output_file": "20.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "21.in",
+    "output_file": "21.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "22.in",
+    "output_file": "22.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "23.in",
+    "output_file": "23.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "24.in",
+    "output_file": "24.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "25.in",
+    "output_file": "25.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "26.in",
+    "output_file": "26.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "27.in",
+    "output_file": "27.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "28.in",
+    "output_file": "28.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "29.in",
+    "output_file": "29.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "3.in",
+    "output_file": "3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "30.in",
+    "output_file": "30.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "31.in",
+    "output_file": "31.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "32.in",
+    "output_file": "32.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "33.in",
+    "output_file": "33.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "34.in",
+    "output_file": "34.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "35.in",
+    "output_file": "35.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "36.in",
+    "output_file": "36.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "37.in",
+    "output_file": "37.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "38.in",
+    "output_file": "38.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "39.in",
+    "output_file": "39.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "4.in",
+    "output_file": "4.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "40.in",
+    "output_file": "40.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "41.in",
+    "output_file": "41.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "42.in",
+    "output_file": "42.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "43.in",
+    "output_file": "43.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "44.in",
+    "output_file": "44.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "45.in",
+    "output_file": "45.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "46.in",
+    "output_file": "46.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "47.in",
+    "output_file": "47.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "48.in",
+    "output_file": "48.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "49.in",
+    "output_file": "49.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "5.in",
+    "output_file": "5.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "50.in",
+    "output_file": "50.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "6.in",
+    "output_file": "6.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "7.in",
+    "output_file": "7.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "8.in",
+    "output_file": "8.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "9.in",
+    "output_file": "9.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "example_1.in",
+    "output_file": "example_1.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "example_2.in",
+    "output_file": "example_2.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "example_3.in",
+    "output_file": "example_3.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_10_pyramid_pattern.in",
+    "output_file": "test_edge_10_pyramid_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_11_middle_heavy.in",
+    "output_file": "test_edge_11_middle_heavy.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_1_minimum_size.in",
+    "output_file": "test_edge_1_minimum_size.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_2_no_constraints.in",
+    "output_file": "test_edge_2_no_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_3_maximum_constraints.in",
+    "output_file": "test_edge_3_maximum_constraints.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_4_single_position_constrained.in",
+    "output_file": "test_edge_4_single_position_constrained.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_5_alternating_pattern.in",
+    "output_file": "test_edge_5_alternating_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_6_consecutive_identical.in",
+    "output_file": "test_edge_6_consecutive_identical.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_7_decreasing_pattern.in",
+    "output_file": "test_edge_7_decreasing_pattern.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_8_single_element_only.in",
+    "output_file": "test_edge_8_single_element_only.out",
+    "passed": true,
+    "diff": ""
+  },
+  {
+    "attempt": "run_16.cpp",
+    "input_file": "test_edge_9_gap_pattern.in",
+    "output_file": "test_edge_9_gap_pattern.out",
+    "passed": true,
+    "diff": ""
+  }
+]

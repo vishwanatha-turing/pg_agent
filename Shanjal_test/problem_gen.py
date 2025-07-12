@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import TypedDict
 from topics import select_topics
 import subprocess
-import os
 import re
 import asyncio
 
@@ -20,17 +19,19 @@ def load_prompts():
     spec.loader.exec_module(module)
     return module.GENERATE_PROBLEM_STATEMENT_PROMPT, module.GENERATE_TEST_CASES_PROMPT
 
-# === State ===
+# === Graph State ===
 class GraphState(TypedDict):
     instruction: str
     topics: list[str]
     generated_problem: str
     test_cases: list[str]
     cpp_codes: list[str]
+    accepted: bool
 
-# === Node 1: Generate Problem ===
-llm = ChatOpenAI(model="gpt-4o", temperature=0.7)
+# === LLM ===
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
 
+# === Step 1: Generate Problem ===
 def generate_problem_node(state: GraphState) -> GraphState:
     problem_prompt, _ = load_prompts()
     topics = select_topics()
@@ -45,15 +46,33 @@ def generate_problem_node(state: GraphState) -> GraphState:
 
     result = llm.invoke(formatted_prompt)
     Path("-problem.md").write_text(result.content, encoding="utf-8")
+
     return {
         "instruction": instruction,
         "generated_problem": result.content,
         "test_cases": [],
         "cpp_codes": [],
-        "topics": topics
+        "topics": topics,
+        "accepted": False
     }
+def interrupt(payload: dict) -> dict:
+    print("\n === HUMAN FEEDBACK REQUIRED ===")
+    print(payload["message"])
 
-# === Node 2: Generate Test Cases using Prompt ===
+    # Show relevant content
+    if "edge_cases" in payload:
+        print("\nEdge Cases:")
+        for i, case in enumerate(payload["edge_cases"], 1):
+            print(f"\nCase {i}:\n{case}")
+    elif "problem" in payload:
+        print("\nGenerated Problem:\n")
+        print(payload["problem"])
+
+    # Ask for user feedback
+    feedback = input("\n Enter feedback (or leave blank to accept): ").strip()
+    return {"data": feedback}
+
+# === Step 2: Generate Test Cases ===
 def generate_test_cases_node(state: GraphState) -> GraphState:
     _, test_prompt_template = load_prompts()
     prompt = PromptTemplate.from_template(test_prompt_template)
@@ -61,7 +80,6 @@ def generate_test_cases_node(state: GraphState) -> GraphState:
     test_prompt = prompt.format(problem_statement=state["generated_problem"])
     result = llm.invoke(test_prompt)
 
-    # Extract test cases using format from output
     blocks = re.findall(
         r"Test Case \d+:\s*Input:\s*(.*?)\s*Expected Output:\s*(.*?)\s*Description:",
         result.content,
@@ -70,7 +88,7 @@ def generate_test_cases_node(state: GraphState) -> GraphState:
     formatted = [f"{inp.strip()}\n{out.strip()}" for inp, out in blocks]
     return {**state, "test_cases": formatted}
 
-# === Node 3: Generate and Validate C++ Code ===
+# === Step 3: Generate and Validate C++ Code ===
 async def generate_and_test_single_code(index: int, problem: str, test_cases: list[str]) -> tuple[str, bool]:
     llm_local = ChatOpenAI(model="gpt-4o", temperature=0.7)
     cpp_prompt = f"""
@@ -109,33 +127,61 @@ async def loop_generate_cpp_node(state: GraphState) -> GraphState:
     any_passed = any(passed for _, passed in results)
 
     if any_passed:
-        print(" At least one C++ code passed.")
+        print("At least one C++ code passed.")
         return {**state, "cpp_codes": codes}
     else:
-        print(" All 16 attempts failed. Saving to qwen folder.")
+        print(" All 16 attempts failed.")
         for j, code in enumerate(codes):
-            Path(f"qwen/attempt_{j+1}.cpp").write_text(code)
-        return {**state, "cpp_codes": codes, "end": True}
+            Path(f"qwen/run_{j+1}.cpp").write_text(code)
+        return {**state, "cpp_codes": codes}
+
+
+# === Step 4: Human Feedback (final review) ===
+def human_feedback_node(state: dict) -> dict:
+    payload = {
+        "message": "Review everything generated (problem, test cases, and C++ codes). Leave empty to accept, or type feedback.",
+        "problem": state.get("generated_problem", ""),
+        "test_cases": state.get("test_cases", []),
+        "cpp_code_sample": state.get("cpp_codes", ["<none>"])[0],
+    }
+
+    response = interrupt(payload)
+
+    if isinstance(response, dict):
+        feedback = str(response.get("data", "")).strip()
+    else:
+        feedback = str(response).strip()
+
+    state["accepted"] = feedback == ""
+    return state
 
 # === Build LangGraph ===
 builder = StateGraph(GraphState)
-builder.add_node("Load Prompt", generate_problem_node)
-builder.add_node("Extract Testcases", generate_test_cases_node)
+
+# Add all steps
+builder.add_node("GenerateProblem", generate_problem_node)
+builder.add_node("GenerateTestCases", generate_test_cases_node)
 builder.add_node("Loop16", loop_generate_cpp_node)
+builder.add_node("HumanFeedback", human_feedback_node)
 
-builder.set_entry_point("Load Prompt")
-builder.add_edge("Load Prompt", "Extract Testcases")
-builder.add_edge("Extract Testcases", "Loop16")
-builder.add_conditional_edges("Loop16", lambda x: "Load Prompt" if not x.get("end") else END)
+# Set flow
+builder.set_entry_point("GenerateProblem")
+builder.add_edge("GenerateProblem", "GenerateTestCases")
+builder.add_edge("GenerateTestCases", "Loop16")
+builder.add_edge("Loop16", "HumanFeedback")
+builder.add_edge("HumanFeedback", END)
 
+# Compile app
 app = builder.compile()
 
+# Run
 if __name__ == "__main__":
     initial_state: GraphState = {
         "instruction": "",
         "generated_problem": "",
         "test_cases": [],
         "cpp_codes": [],
-        "topics": []
+        "topics": [],
+        "accepted": False
     }
     asyncio.run(app.ainvoke(initial_state))
