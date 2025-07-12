@@ -4,12 +4,20 @@ import json
 from pathlib import Path
 import tempfile 
 import shutil 
+import subprocess
+import questionary
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 # --- THIS IS THE FIX ---
 # Import the correct, existing sandbox function
 from ...pipeline.sandbox.sandbox_utils import run_single_test
 from .schemas import BruteForceState
+
+def _open_in_editor(file_path: Path):
+    """Opens a file in the default text editor."""
+    editor = os.environ.get('EDITOR', 'notepad' if os.name == 'nt' else 'vim')
+    print(f"Opening {file_path.name} with '{editor}' for your review...")
+    subprocess.run([editor, str(file_path)], check=True)
 
 def _extract_cpp_code(response_content: str) -> str:
     match = re.search(r'```(?:cpp)?\s*([\s\S]+?)\s*```', response_content)
@@ -100,6 +108,33 @@ def refine_bruteforce_node(state: BruteForceState) -> dict:
         "test_failures": json.dumps(state["test_failures"], indent=2),
     })
     return {"bruteforce_code": _extract_cpp_code(response.content)}
+
+# --- NEW: Node for optional human review ---
+def interactive_review_node(state: BruteForceState) -> dict:
+    """Optionally allows the user to review and edit the generated code."""
+    print("\n" + "="*60)
+    wants_to_review = questionary.confirm(
+        "A bruteforce solution has been generated. Would you like to review or edit it before testing?",
+        default=False,
+        qmark="?"
+    ).ask()
+    
+    if not wants_to_review:
+        print("--- Skipping review. Proceeding with AI-generated code. ---")
+        return {}
+
+    with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix=".cpp", encoding="utf-8") as tf:
+        temp_code_path = Path(tf.name)
+        tf.write(state["bruteforce_code"])
+    
+    _open_in_editor(temp_code_path)
+    
+    # Read the potentially modified code back
+    modified_code = temp_code_path.read_text(encoding="utf-8")
+    os.unlink(temp_code_path)
+    
+    print("--- Code updated with your changes. ---")
+    return {"bruteforce_code": modified_code}
 
 def save_and_version_node(state: BruteForceState) -> dict:
     """Saves the final correct code to the automation hub inside the problem directory."""

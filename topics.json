@@ -1,0 +1,128 @@
+{
+    "data_structures": {
+        "linear": [
+            "Arrays",
+            "Strings",
+            "Linked Lists",
+            "Stacks",
+            "Queues",
+            "Deques"
+        ],
+        "trees": [
+            "Binary Trees",
+            "Binary Search Trees (BST)",
+            "Heaps (Min/Max Priority Queue)",
+            "Tries (Prefix Trees)",
+            "Segment Trees",
+            "Fenwick Trees (BIT)",
+            "AVL Trees",
+            "Red-Black Trees"
+        ],
+        "graphs": [
+            "Adjacency List/Matrix Representation",
+            "Implicit Graphs",
+            "Directed Acyclic Graphs (DAG)"
+        ],
+        "hashing": [
+            "Hash Tables / Hash Maps",
+            "Rolling Hash",
+            "String Hashing",
+            "Collision Resolution"
+        ],
+        "advanced": [
+            "Disjoint Set Union (DSU)",
+            "Sparse Tables",
+            "2-3 Trees"
+        ]
+    },
+    "algorithms": {
+        "sorting_and_searching": [
+            "Quicksort",
+            "Mergesort",
+            "Heapsort",
+            "Counting Sort",
+            "Radix Sort",
+            "Binary Search",
+            "Ternary Search",
+            "Meet in the Middle"
+        ],
+        "graph_algorithms": {
+            "traversal": [
+                "Breadth-First Search (BFS)",
+                "Depth-First Search (DFS)",
+                "Topological Sort",
+                "Eulerian Path/Circuit",
+                "Biconnected Components"
+            ],
+            "shortest_path": [
+                "Dijkstra's Algorithm",
+                "Bellman-Ford",
+                "Floyd-Warshall",
+                "SPFA"
+            ],
+            "spanning_trees": [
+                "Prim's Algorithm",
+                "Kruskal's Algorithm (MST)"
+            ],
+            "network_flow": [
+                "Max Flow Min Cut (Edmonds-Karp, Dinic)",
+                "Minimum Cost Maximum Flow"
+            ]
+        },
+        "dynamic_programming": [
+            "Knapsack (0/1, Unbounded, Fractional)",
+            "Longest Common Subsequence (LCS)",
+            "Longest Increasing Subsequence (LIS)",
+            "Matrix Chain Multiplication",
+            "Edit Distance",
+            "DP on Trees",
+            "Digit DP",
+            "DP with Bitmasking",
+            "Profile DP"
+        ],
+        "string_algorithms": [
+            "Knuth-Morris-Pratt (KMP)",
+            "Z-Algorithm",
+            "Aho-Corasick",
+            "Manacher's Algorithm",
+            "Suffix Arrays",
+            "Suffix Trees",
+            "Suffix Automaton"
+        ],
+        "backtracking_and_branch_bound": [
+            "Permutations and Combinations",
+            "N-Queens Problem",
+            "Sudoku Solver",
+            "Traveling Salesperson Problem (TSP)"
+        ]
+    },
+    "paradigms_and_techniques": [
+        "Bruteforce",
+        "Greedy Algorithms",
+        "Divide and Conquer",
+        "Two Pointers",
+        "Sliding Window",
+        "Recursion",
+        "Memoization",
+        "Randomization",
+        "Mo's Algorithm",
+        "Square Root Decomposition"
+    ],
+    "domains": {
+        "mathematics": [
+            "Number Theory (GCD, LCM, Primality Testing, Sieve of Eratosthenes)",
+            "Combinatorics (nCr, Catalan Numbers)",
+            "Probability",
+            "Modular Arithmetic (Modular Inverse, Chinese Remainder Theorem)",
+            "Matrix Exponentiation",
+            "Fast Fourier Transform (FFT)"
+        ],
+        "computational_geometry": [
+            "Convex Hull (Graham Scan, Monotone Chain)",
+            "Line Sweep Algorithms",
+            "Closest Pair of Points",
+            "Point in Polygon",
+            "Line Segment Intersection"
+        ]
+    }
+}

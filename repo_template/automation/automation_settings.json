@@ -1,6 +1,6 @@
 {
-    "bruteforceSolutionVersion": 0,
-    "testcaseValidatorVersion": 0,
+    "bruteforceSolutionVersion": 1,
+    "testcaseValidatorVersion": 1,
     "stressTestcaseGeneratorVersion": 0,
-    "smallTestcaseGeneratorVersion": 0
+    "smallTestcaseGeneratorVersion": 1
 }

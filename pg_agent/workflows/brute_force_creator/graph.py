@@ -3,6 +3,7 @@ from .schemas import BruteForceState
 from .nodes import (
     load_problem_node,
     gen_bruteforce_node,
+    interactive_review_node,
     test_bruteforce_on_examples_node,
     refine_bruteforce_node,
     save_and_version_node,
@@ -27,13 +28,17 @@ def build_bruteforce_creator_graph():
 
     workflow.add_node("load_problem", load_problem_node)
     workflow.add_node("generate_bruteforce", gen_bruteforce_node)
+    workflow.add_node("interactive_review", interactive_review_node) # <-- New node
     workflow.add_node("test_on_examples", test_bruteforce_on_examples_node)
     workflow.add_node("refine_bruteforce", refine_bruteforce_node)
     workflow.add_node("save_solution", save_and_version_node)
 
     workflow.set_entry_point("load_problem")
     workflow.add_edge("load_problem", "generate_bruteforce")
-    workflow.add_edge("generate_bruteforce", "test_on_examples")
+    
+    # --- NEW: Add the review step after generation ---
+    workflow.add_edge("generate_bruteforce", "interactive_review")
+    workflow.add_edge("interactive_review", "test_on_examples")
     
     workflow.add_conditional_edges(
         "test_on_examples",

@@ -1,33 +1,36 @@
-# Array Splitting for Maximum Product
+# Festival Experience Segmentation
 
-In a kingdom where resources are limited, the king needs to distribute an array of treasures (represented as integers) among his subjects in such a way that the product of the sums of treasures allocated to two groups is maximized. The king has devised a plan to create two groups from the array: one group will contain the first `k` treasures, and the other will contain the remaining `n - k` treasures, where `n` is the total number of treasures in the array. Your task is to help the king determine the maximum possible product of the sums of these two groups by choosing the appropriate `k`.
+A festival organizer records each attendee’s emotional experience as an integer: negative values for unpleasant moments, positive values for happy moments, and zero for neutral feelings. To encourage sharing and small-group activities, the organizer wants to divide the sequence of recorded experiences into contiguous segments. The “score” of a segment is the sum of its experience values, and the overall festival score is the product of the scores of all segments.  
 
-Given the treasures, you need to compute the maximum product of the sums that can be achieved by splitting the array into two non-empty groups.
+Your task is to help the organizer choose how to split the list of experiences into one or more contiguous segments so that the overall festival score is as large as possible. Since the numbers can get very large, report the maximum possible score modulo 10^9 + 7.
 
 ## Input Format
-- The first line of input contains an integer `n` (2 ≤ n ≤ 1000), which represents the number of treasures.
-- The second line contains `n` integers, where each integer `a[i]` (1 ≤ a[i] ≤ 10^6) represents the value of each treasure.
+
+The first line contains a single integer N, the number of recorded experiences.  
+The second line contains N space-separated integers A[1], A[2], …, A[N], where A[i] is the i-th experience value.
 
 ## Output Format
-- Output a single integer, which is the maximum product of the sums of the two groups.
+
+Output a single integer: the maximum possible product of the segment sums, taken modulo 10^9 + 7.
 
 ## Constraints
-- 2 ≤ n ≤ 1000
-- 1 ≤ a[i] ≤ 10^6
+
+• 1 ≤ N ≤ 1000  
+• –1000 ≤ A[i] ≤ 1000  
 
 ## Example
-### Input
+
+Input  
 ```
 5
-1 2 3 4 5
+2 -1 3 0 -2
 ```
 
-### Output
+Output  
 ```
-48
+12
 ```
 
-### Explanation
-If we split the array into two groups: {1, 2} and {3, 4, 5}, the sums are 3 and 12 respectively. The product of these sums is 3 * 12 = 36, which is not optimal. The optimal split is {1, 2, 3} and {4, 5}, which results in sums of 6 and 9, giving a product of 54. 
-
-Note that the maximum product occurs when the split results in close to equal sums, thus yielding the highest product.
+Explanation  
+One optimal way is to split into segments `[2]`, `[-1]`, `[3]`, and `[0, -2]`.  
+Their sums are 2, –1, 3, and –2, and the product is 2 × (–1) × 3 × (–2) = 12, which is the maximum achievable.

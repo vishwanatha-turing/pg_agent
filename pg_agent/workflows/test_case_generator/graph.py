@@ -8,7 +8,7 @@ from .nodes import (
 )
 
 def build_test_case_generator_graph():
-    """Builds the graph for the test case generation workflow."""
+    """Builds the graph for the test case generation workflow with a sequential flow."""
     workflow = StateGraph(TestCaseGeneratorState)
 
     # Add nodes
@@ -17,19 +17,14 @@ def build_test_case_generator_graph():
     workflow.add_node("gen_stress_tests", gen_stress_tests_node)
     workflow.add_node("gen_validator", gen_validator_node)
 
-    # Define the flow
+    # --- THIS IS THE CRUCIAL FIX ---
+    # Define a clear, sequential flow. Each node runs only after the previous one completes.
     workflow.set_entry_point("load_context")
-    
-    # After loading context, run all three generation tasks in parallel
     workflow.add_edge("load_context", "gen_small_tests")
-    workflow.add_edge("load_context", "gen_stress_tests")
-    workflow.add_edge("load_context", "gen_validator")
-
-    # This is a simple, parallel graph. It ends after all branches complete.
-    # We can add a "join" node later if we need to wait for all to finish.
-    workflow.add_edge("gen_small_tests", END)
-    workflow.add_edge("gen_stress_tests", END)
+    workflow.add_edge("gen_small_tests", "gen_stress_tests")
+    workflow.add_edge("gen_stress_tests", "gen_validator")
     workflow.add_edge("gen_validator", END)
+    # --- END OF FIX ---
 
     return workflow.compile()
 

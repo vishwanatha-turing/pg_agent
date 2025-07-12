@@ -3,61 +3,121 @@ import re
 import shutil
 import subprocess
 import tempfile
+import json
+import random
 from pathlib import Path
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
+import questionary
 
 from .schemas import NovelProblemState
 
 def get_llm_client():
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key: raise ValueError("OPENAI_API_KEY not found in environment.")
-    return ChatOpenAI(model="gpt-4o-mini", api_key=api_key, max_tokens=8192)
+    return ChatOpenAI(model="o4-mini", api_key=api_key, max_tokens=8192)
 
 def _parse_test_cases(response: str) -> list[tuple[str, str]]:
     """Parses the LLM response using XML-like tags to find test cases."""
     test_cases = []
-    # Use a non-greedy regex to find all <test_case> blocks
     for match in re.finditer(r'<test_case>(.*?)</test_case>', response, re.DOTALL):
         block = match.group(1)
-        # Extract input and output from within the block
         input_match = re.search(r'<input>(.*?)</input>', block, re.DOTALL)
         output_match = re.search(r'<output>(.*?)</output>', block, re.DOTALL)
         if input_match and output_match:
             test_cases.append((input_match.group(1).strip(), output_match.group(1).strip()))
     return test_cases
 
+def _get_user_feedback_from_editor() -> str:
+    """Opens a temporary file in the default text editor and returns the user's input."""
+    editor = os.environ.get('EDITOR', 'notepad' if os.name == 'nt' else 'vim')
+    initial_content = "# Please enter your feedback below. Save and close this file to continue.\n" \
+                      "# To accept the current version and generate test cases, save and close this file without adding any other text.\n"
+    
+    with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix=".txt", encoding="utf-8") as tf:
+        feedback_file_path = tf.name
+        tf.write(initial_content)
+    
+    print(f"Opening feedback file with '{editor}'...")
+    try:
+        subprocess.run([editor, feedback_file_path], check=True)
+    except Exception as e:
+        print(f"\nError opening editor: {e}. Please manually open and edit the file.")
+        print(f"Feedback file path: {feedback_file_path}")
+        input("Press Enter to continue after you have saved and closed the file...")
+
+    feedback_content = Path(feedback_file_path).read_text(encoding="utf-8")
+    os.unlink(feedback_file_path)
+    
+    lines = [line for line in feedback_content.splitlines() if not line.strip().startswith('#')]
+    return "\n".join(lines).strip()
+
 # --- Node Definitions ---
 
-def setup_node(state: NovelProblemState) -> dict:
-    """Copies the repo_template and loads any context from a previous problem."""
-    print(f"--- Setting up output directory: {state['output_dir']} ---")
-    output_path = Path(state['output_dir'])
+def interactive_setup_node(state: NovelProblemState) -> dict:
+    """Interactively asks the user for the generation strategy and gathers inputs."""
+    print("--- Welcome to the Novel Problem Creator ---")
     
-    # Use an absolute path for the template to be safe
+    output_path = Path(state['output_dir'])
     template_path = Path(__file__).parent.parent.parent.parent / "repo_template"
     if not template_path.exists():
         raise FileNotFoundError(f"Template directory not found at: {template_path}")
-
-    # Copy template to output directory
     if output_path.exists():
-        print(f"Directory '{output_path}' already exists. Overwriting is not supported.")
+        print(f"Warning: Output directory '{output_path}' already exists. Files may be overwritten.")
     else:
         shutil.copytree(template_path, output_path)
-        print(f"Copied template to '{output_path}'.")
+        print(f"Created new problem directory at '{output_path}'.")
 
-    previous_problem = None
-    if state.get("context_dir"):
-        context_path = Path(state["context_dir"]) / "problem_statement.md"
-        if context_path.exists():
-            previous_problem = context_path.read_text(encoding="utf-8")
-            print(f"Loaded context from: {context_path}")
-        else:
-            print(f"Warning: Context directory provided, but no problem_statement.md found in {state['context_dir']}")
+    strategy = questionary.select(
+        "How would you like to generate the new problem?",
+        choices=[
+            "Random Topic (from a curated list of topics)",
+            "Specific Topics (you provide the topics)",
+            "Your Own Idea (describe your concept in a text editor)",
+        ],
+        qmark="?",
+        pointer="»"
+    ).ask()
 
-    return {"previous_problem": previous_problem}
+    if not strategy:
+        raise KeyboardInterrupt
 
-def initial_generation_node(state: NovelProblemState) -> dict:
+    topics, user_prompt, previous_problem = None, None, None
+
+    if "Random Topic" in strategy:
+        topics_path = Path(__file__).parent.parent.parent.parent / "topics.json"
+        all_topics = json.loads(topics_path.read_text(encoding="utf-8"))
+        all_topic_choices = []
+        for top_level_value in all_topics.values():
+            if isinstance(top_level_value, dict):
+                for category_list in top_level_value.values():
+                    all_topic_choices.extend(category_list)
+            elif isinstance(top_level_value, list):
+                all_topic_choices.extend(top_level_value)
+        selected_topics = random.sample(all_topic_choices, k=random.randint(1, 2))
+        topics = ", ".join(selected_topics)
+        print(f"I've selected the following topics: '{topics}'")
+        proceed = questionary.confirm("Shall I proceed with these topics?", default=True).ask()
+        if not proceed:
+            raise KeyboardInterrupt
+
+    elif "Specific Topics" in strategy:
+        topics = questionary.text("Please enter the topics, separated by commas:").ask()
+
+    elif "Your Own Idea" in strategy:
+        user_prompt = _get_user_feedback_from_editor()
+        if not user_prompt:
+            print("No idea provided. Aborting.")
+            raise KeyboardInterrupt
+
+    return {
+        "strategy": strategy,
+        "topics": topics,
+        "user_prompt": user_prompt,
+        "previous_problem": previous_problem,
+    }
+
+def generation_node(state: NovelProblemState) -> dict:
     """Generates the first draft of the problem statement."""
     print("--- Generating initial problem statement ---")
     prompt_path = Path(__file__).parent / "prompts/generate_problem.txt"
@@ -77,39 +137,11 @@ def interactive_feedback_node(state: NovelProblemState) -> dict:
     print("\n" + "="*60)
     print("--- Pausing for Your Feedback ---")
     
-    # Save the current version for the user to review
     problem_path = Path(state['output_dir']) / "problem_statement.md"
     problem_path.write_text(state['problem_statement'], encoding="utf-8")
     print(f"The latest version of the problem has been saved to:\n{problem_path.resolve()}")
 
-    # Create a temporary file for feedback
-    with tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix=".txt", encoding="utf-8") as tf:
-        feedback_file_path = tf.name
-        tf.write("# Please enter your feedback below. Save and close this file to continue.\n")
-        tf.write("# To accept the current version and generate test cases, save and close this file without adding any other text.\n")
-    
-    # Determine the default editor
-    editor = os.environ.get('EDITOR', 'notepad' if os.name == 'nt' else 'vim')
-    print(f"Opening feedback file with '{editor}'...")
-    
-    try:
-        # Open the editor and wait for the user to close it
-        subprocess.run([editor, feedback_file_path], check=True)
-    except Exception as e:
-        print(f"\nError opening editor: {e}")
-        print("Please manually open the feedback file, add your notes, save, and close it.")
-        print(f"Feedback file path: {feedback_file_path}")
-        input("Press Enter to continue after you have saved and closed the file...")
-
-    # Read the feedback from the file
-    feedback_content = Path(feedback_file_path).read_text(encoding="utf-8")
-    
-    # Clean the default instructional text
-    lines = [line for line in feedback_content.splitlines() if not line.strip().startswith('#')]
-    human_feedback = "\n".join(lines).strip()
-    
-    # Clean up the temporary file
-    os.unlink(feedback_file_path)
+    human_feedback = _get_user_feedback_from_editor()
     
     if human_feedback:
         print("--- Feedback received. Preparing to refine problem statement. ---")
@@ -131,7 +163,6 @@ def refinement_node(state: NovelProblemState) -> dict:
         "human_feedback": state["human_feedback"],
     })
     
-    # Overwrite the old problem statement with the refined version
     return {"problem_statement": response.content}
 
 def generate_examples_node(state: NovelProblemState) -> dict:
@@ -151,8 +182,8 @@ def final_save_node(state: NovelProblemState) -> dict:
     """Saves the final generated examples to the output directory."""
     print("--- Saving final example test cases ---")
     test_cases_dir = Path(state['output_dir']) / "test_cases"
+    test_cases_dir.mkdir(exist_ok=True)
     
-    # Clear any existing example files first
     for f in test_cases_dir.glob("example_*"):
         f.unlink()
         

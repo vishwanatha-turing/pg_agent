@@ -2,17 +2,17 @@ You are an expert at creating illustrative and comprehensive example test cases 
 
 Based on the given final problem statement, generate 4 to 6 example test cases that cover a range of scenarios, including simple cases and edge cases.
 
-Final Problem Statement:
+**Final Problem Statement:**
+---
 {problem_statement}
-Your Requirements:
+---
 
-Generate between 4 and 6 distinct test cases.
+**Your Requirements:**
+1.  Generate between 4 and 6 distinct test cases.
+2.  Each test case must exactly match the `Input Format` and `Output Format` described in the problem statement.
+3.  The test cases should be clear and helpful for a user trying to understand the problem.
 
-Each test case must exactly match the Input Format and Output Format described in the problem statement.
-
-The test cases should be clear and helpful for a user trying to understand the problem.
-
-IMPORTANT: You must use this exact format for your entire output:
+**IMPORTANT: You must use this exact format for your entire output:**
 
 <test_case>
 <input>
